@@ -7,12 +7,11 @@ package br.com.jcomputacao.cfe.sat.xml;
 
 import br.com.jcomputacao.cfe.sat.xml.recepcao.EnvCFe;
 import java.io.ByteArrayOutputStream;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
 
 /**
  * 16/08/2015 16:33:54
@@ -33,15 +32,38 @@ public class Teste {
                 cfe.setInfCFe(infCfe);
                 infCfe.setVersao("006");
             }
-            
+
             EnvCFe envCfe = new EnvCFe();
             envCfe.setCUF("SP");
 
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
             JAXBContext context = JAXBContext.newInstance(br.com.jcomputacao.cfe.sat.xml.recepcao.EnvCFe.class);
-            context.createMarshaller().marshal(cfe, baos);
+            Marshaller marshaller = context.createMarshaller();
+            marshaller.marshal(cfe, baos);
             String xml = baos.toString();
             System.out.println(xml);
+            
+            baos = new ByteArrayOutputStream();
+            marshaller.setProperty("eclipselink.media-type", "application/json");
+            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+            marshaller.marshal(cfe, baos);
+            String json = baos.toString();
+            System.out.println(json);
+
+//            //http://examples.javacodegeeks.com/core-java/xml/bind/jaxb-json-example/
+              //To use MOXy as your JAXB provider you need to include a file called jaxb.properties with the following entry in the same package as your domain model:
+//            // Set the Marshaller media type to JSON or XML
+//            marshaller.setProperty(MarshallerProperties.MEDIA_TYPE,
+//                    "application/json");
+//
+//            // Set it to true if you need to include the JSON root element in the JSON output
+//            marshaller.setProperty(MarshallerProperties.JSON_INCLUDE_ROOT, true);
+//
+//            // Set it to true if you need the JSON output to formatted
+//            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+//
+//            // Marshal the employee object to JSON and print the output to console
+//            marshaller.marshal(employee, System.out);
         } catch (JAXBException ex) {
             Logger.getLogger(Teste.class.getName()).log(Level.SEVERE, null, ex);
         }
