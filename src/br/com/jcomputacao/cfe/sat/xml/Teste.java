@@ -71,13 +71,19 @@ public class Teste {
             icms.setICMS00(icms00);
             imposto.setICMS(icms);
             
-            EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS confis = of.createEnvCFeLoteCFeCFeInfCFeDetImpostoCOFINS();
-            
-            imposto.setCOFINS(confis);
+            EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS cofins = of.createEnvCFeLoteCFeCFeInfCFeDetImpostoCOFINS();
+            EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS.COFINSNT cofinsNT = of.createEnvCFeLoteCFeCFeInfCFeDetImpostoCOFINSCOFINSNT();
+            cofinsNT.setCST("04");
+            cofins.setCOFINSNT(cofinsNT);
+            imposto.setCOFINS(cofins);
             
             EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS pis = of.createEnvCFeLoteCFeCFeInfCFeDetImpostoPIS();
-            pis.setPISNT(null);
+            EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS.PISNT pisNT = of.createEnvCFeLoteCFeCFeInfCFeDetImpostoPISPISNT();
+            pisNT.setCST("04");
+            pis.setPISNT(pisNT);
             imposto.setPIS(pis);
+            
+            imposto.setVItem12741("0.02");
             
             det.setImposto(imposto);
             
@@ -112,7 +118,7 @@ public class Teste {
             
             EnvCFe.LoteCFe.CFe.InfCFe.Total total = of.createEnvCFeLoteCFeCFeInfCFeTotal();
             total.setVCFe("0.06");
-            
+            total.setVCFeLei12741("0.02");
 
             infCfe.setTotal(total);
             

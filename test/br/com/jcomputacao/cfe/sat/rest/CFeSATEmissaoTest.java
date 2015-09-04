@@ -46,10 +46,41 @@ public class CFeSATEmissaoTest {
 //    @Test
 //    public void hello() {
         try {
-            String json = "{\"dest\":{\"CPF\":\"27933992803\"}\n"
-                    + " ,\"det\":[{\"nItem\":\"1\"\n"
+            String json = 
+                      "{\"dest\":{\"CPF\":\"27933992803\"},\n"
+                    + " \"det\":["
+                    + "          {\"nItem\":\"1\"\n"
                     + "         ,\"imposto\":\n"
-                    + "		   {\"COFINS\":{\"COFINSNT\":{\"CST\":\"04\"}},\"ICMS\":{\"ICMS40\":{\"Orig\":\"0\",\"CST\":\"60\"}},\"PIS\":{\"PISNT\":{\"CST\":\"04\"}},\"vItem12741\":\"0.42\"},\"prod\":{\"CFOP\":\"5102\",\"NCM\":\"22011000\",\"cProd\":\"000001\",\"indRegra\":\"A\",\"qCom\":\"1.0000\",\"uCom\":\"UN\",\"vDesc\":\"0.00\",\"vUnCom\":\"0.06\",\"xProd\":\"Arruela Lisa 3/4\",\"vOutro\":\"0.00\"}}],\"emit\":{\"CNPJ\":\"05437537000137\",\"IE\":\"111111111111\",\"indRatISSQN\":\"N\",\"xNome\":\"AUTO GERAL DE ITU LTDA\",\"xFant\":\"AUTO GERAL LTDA\"},\"entrega\":null,\"ide\":{\"CNPJ\":\"16716114000172\",\"numeroCaixa\":\"002\",\"signAC\":\"SGR-SAT SISTEMA DE GESTAO E RETAGUARDA DO SAT\"},\"total\":{\"vCFeLei12741\":\"0.00\"},\"pgto\":{\"MP\":[{\"cMP\":\"01\",\"vMP\":\"1.00\"}]},\"dataInserido\":\"31/08/2015 21:43:18\",\"infAdic\":{\"infCpl\":\"Obrigado, volte sempre\"},\"extratoResumido\":false}";
+                    + "		   {\"COFINS\":{\"COFINSNT\":{\"CST\":\"04\"}},\n"
+                    + "             \"ICMS\":  {\"ICMS40\":{\"Orig\":\"0\",\"CST\":\"60\"}},\n"
+                    + "             \"PIS\":{\"PISNT\":{\"CST\":\"04\"}},\n"
+                    + "             \"vItem12741\":\"0.42\"}\n"
+                    + "         ,\"prod\":{\"CFOP\":\"5102\",\n"
+                    + "                    \"NCM\":\"22011000\",\n"
+                    + "                    \"cProd\":\"000001\",\n"
+                    + "                    \"indRegra\":\"A\",\n"
+                    + "                    \"qCom\":\"1.0000\",\n"
+                    + "                    \"uCom\":\"UN\",\n"
+                    + "                    \"vDesc\":\"0.00\",\n"
+                    + "                    \"vUnCom\":\"0.06\",\n"
+                    + "                    \"xProd\":\"Arruela Lisa 3/4\",\n"
+                    + "                    \"vOutro\":\"0.00\"}"
+                    + "            }\n"
+                    + "         ],\n"
+                    + " \"emit\":{\"CNPJ\":\"05437537000137\",\n"
+                    + "           \"IE\":\"111111111111\",\n"
+                    + "           \"indRatISSQN\":\"N\",\n"
+                    + "           \"xNome\":\"AUTO GERAL DE ITU LTDA\",\n"
+                    + "           \"xFant\":\"AUTO GERAL LTDA\"},\n"
+                    + " \"entrega\":null,\n"
+                    + " \"ide\":{\"CNPJ\":\"16716114000172\",\n"
+                    + " \"numeroCaixa\":\"001\",\n"
+                    + " \"signAC\":\"SGR-SAT SISTEMA DE GESTAO E RETAGUARDA DO SAT\"},\n"
+                    + " \"total\":{\"vCFeLei12741\":\"0.00\"},\n"
+                    + "\"pgto\":{\"MP\":[{\"cMP\":\"01\",\"vMP\":\"1.00\"}]},\n"
+                    + "\"dataInserido\":\"31/08/2015 21:43:18\",\n"
+                    + "\"infAdic\":{\"infCpl\":\"Obrigado, volte sempre\"},\n"
+                    + "             \"extratoResumido\":false}";
 
             String server = "localhost";
             String port = "8080";
