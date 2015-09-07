@@ -113,6 +113,13 @@ public class Teste {
             mp.setCAdmC("A VISTA");
             mp.setVMP("0.10");
             pgto.getMP().add(mp);
+            
+            mp = of.createEnvCFeLoteCFeCFeInfCFePgtoMP();
+            mp.setCMP("2");
+            mp.setCAdmC("A PRAZO");
+            mp.setVMP("0.01");
+            pgto.getMP().add(mp);
+            
             pgto.setVTroco("0.04");
             infCfe.setPgto(pgto);
             
