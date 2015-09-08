@@ -107,16 +107,4 @@ public class BematechFiscalJSonClientTest {
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of getContent method, of class BematechFiscalJSonClient.
-     */
-    @Test
-    public void testGetContent() {
-        System.out.println("getContent");
-        BematechFiscalJSonClient instance = null;
-        byte[] expResult = null;
-        byte[] result = instance.getContent();
-        assertArrayEquals(expResult, result);
-    }
-
 }
