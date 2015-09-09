@@ -42,6 +42,7 @@ public class BematechFiscalJSonClient {
     }
     
     private int executePost(String url, String json) throws IOException {
+        System.out.println("POST : " + url);
         PostMethod post = new PostMethod(url);
         RequestEntity requestEntity = new StringRequestEntity(json, "application/json", "UTF-8");
         post.setRequestHeader("Accept", "application/json");
@@ -69,6 +70,7 @@ public class BematechFiscalJSonClient {
 
     public int impressao(String chave) throws IOException {
         String url = "http://" + host + ":" + port + "/fiscal-sat/api/cfe/" + chave + "/pdf";
+        System.out.println("GET : " + url);
         GetMethod get = new GetMethod(url);
         HttpClient client = new HttpClient();
         int r = client.executeMethod(get);
@@ -92,6 +94,7 @@ public class BematechFiscalJSonClient {
         GetMethod get = new GetMethod(url);
 
         HttpClient client = new HttpClient();
+        System.out.println("GET : " + url);
         int r = client.executeMethod(get);
 
         InputStream input = get.getResponseBodyAsStream();

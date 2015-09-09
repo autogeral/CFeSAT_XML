@@ -21,11 +21,11 @@ public class BematechFiscalJSonClientTest {
 
     @Before
     public void setUp() {
-        System.setProperty("sat.server.host", "localhost");
-        System.setProperty("sat.server.port", "8080");
+        System.setProperty("sat.server.host", "AD01");
+        System.setProperty("sat.server.port", "8888");
 
-        this.serverHost = "localhost";
-        this.serverPort = 8080;
+        this.serverHost = "AD01";
+        this.serverPort = 8888;
     }
 
     @After

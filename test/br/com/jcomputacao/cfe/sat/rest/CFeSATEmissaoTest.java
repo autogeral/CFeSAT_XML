@@ -46,13 +46,10 @@ public class CFeSATEmissaoTest {
 //    @Test
 //    public void hello() {
         try {
-            String json = "{\"dest\":{\"CPF\":\"27933992803\"}\n"
-                    + " ,\"det\":[{\"nItem\":\"1\"\n"
-                    + "         ,\"imposto\":\n"
-                    + "		   {\"COFINS\":{\"COFINSNT\":{\"CST\":\"04\"}},\"ICMS\":{\"ICMS40\":{\"Orig\":\"0\",\"CST\":\"60\"}},\"PIS\":{\"PISNT\":{\"CST\":\"04\"}},\"vItem12741\":\"0.42\"},\"prod\":{\"CFOP\":\"5102\",\"NCM\":\"22011000\",\"cProd\":\"000001\",\"indRegra\":\"A\",\"qCom\":\"1.0000\",\"uCom\":\"UN\",\"vDesc\":\"0.00\",\"vUnCom\":\"0.06\",\"xProd\":\"Arruela Lisa 3/4\",\"vOutro\":\"0.00\"}}],\"emit\":{\"CNPJ\":\"05437537000137\",\"IE\":\"111111111111\",\"indRatISSQN\":\"N\",\"xNome\":\"AUTO GERAL DE ITU LTDA\",\"xFant\":\"AUTO GERAL LTDA\"},\"entrega\":null,\"ide\":{\"CNPJ\":\"16716114000172\",\"numeroCaixa\":\"002\",\"signAC\":\"SGR-SAT SISTEMA DE GESTAO E RETAGUARDA DO SAT\"},\"total\":{\"vCFeLei12741\":\"0.00\"},\"pgto\":{\"MP\":[{\"cMP\":\"01\",\"vMP\":\"1.00\"}]},\"dataInserido\":\"31/08/2015 21:43:18\",\"infAdic\":{\"infCpl\":\"Obrigado, volte sempre\"},\"extratoResumido\":false}";
+            String json = "{\"ide\":{\"cnpj\":\"09346052000199\",\"signAC\":\"HF18DLyfUnMqMb06KbaE58GdNUdRIE4FS0+nd5bzNlWAv4Xo2Te+QpFGNyR00oV3u+1Kj7Zr8jf0B\\/8BhmaBy55owBWkKXk6w8\\/nurdyFrJyfzz\\/xDghI91d\\/Tni95xljZwvL85VhsrUkAQF18u\\/Pu0SPHdaOf3Qvib7ragLEyfxnwtmUohfwZerylvioHjeUR1iytFWuxt86+2HuYq2j+SltGoXQyWB5LZRB12ncBbycpJ0WvtPSkH2IGA0iV5I+oEIpFAhBtl4D8UezCYKcCsyT9LihCVeFrkhB+nXjq90IEY5gQgBbm+ekc5DVRtzf4Va7LAKBOoqPbZgTcpPLw==\",\"numeroCaixa\":1},\"emit\":{\"cnpj\":\"05437537000137\",\"xNome\":\"AUTO GERAL AUTOPECAS LTDA\",\"xFant\":\"AUTO GERAL\",\"ie\":387034155115,\"im\":12677,\"indRatISSQN\":\"S\"},\"dest\":{\"cpf\":27933992803},\"det\":[{\"prod\":{\"cProd\":\"000001\",\"cean\":\"\",\"xProd\":\"ARRUELA LISA\",\"ncm\":73181500,\"cfop\":5102,\"uCom\":\"PC\",\"qCom\":\"1,00\",\"vUnCom\":0.06,\"vProd\":0.06,\"indRegra\":\"A\",\"vOutro\":\"0.00\",\"vItem\":0.06},\"imposto\":{\"vItem12741\":0.02,\"icms\":{\"icms00\":{\"orig\":0,\"cst\":\"00\",\"picms\":\"18.00\",\"vicms\":0.01}},\"pis\":{\"pisnt\":{\"cst\":\"00\"}},\"cofins\":{\"cofinsnt\":{\"cst\":\"00\"}}},\"nItem\":1}],\"total\":{\"icmsTot\":{\"vicms\":0.01,\"vProd\":0.06,\"vDesc\":\"0.00\",\"vpis\":\"0.00\",\"vcofins\":\"0.00\",\"vOutro\":\"0.00\"},\"vcFe\":\"0,06\",\"vcFeLei12741\":0.02},\"pgto\":{\"mp\":[{\"cmp\":1,\"vmp\":0.06}]},\"infAdic\":{\"infCpl\":\"VLR APRX. R$ 0,01 FEDERAL E R$ 0,01 ESTADUAL\\nFONTE IBPT 5OI7EW\\n CAIXA NAO ABERTO VENDEDOR GERALDO\"}}";
 
-            String server = "localhost";
-            String port = "8080";
+            String server = "ad01";
+            String port = "8888";
 
             PostMethod post = new PostMethod("http://" + server + ":" + port + "/fiscal-sat/api/venda");
             RequestEntity requestEntity = new StringRequestEntity(json, "application/json", "UTF-8");
