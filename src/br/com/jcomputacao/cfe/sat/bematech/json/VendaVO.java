@@ -1,6 +1,7 @@
 package br.com.jcomputacao.cfe.sat.bematech.json;
 
 import java.util.List;
+import javax.xml.bind.annotation.XmlList;
 
 /**
  * Utilizado tanto para o retorno do envio quanto do cancelamento.<br/>
@@ -25,6 +26,7 @@ public class VendaVO {
     private String idQrCode;
     private String nserieSAT;
     private String nCFe;
+    @XmlList
     private List<String> problemas;
 
     public String getSessao() {
