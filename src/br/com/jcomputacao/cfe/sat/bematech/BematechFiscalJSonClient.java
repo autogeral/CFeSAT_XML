@@ -1,9 +1,11 @@
 package br.com.jcomputacao.cfe.sat.bematech;
 
 import java.io.BufferedInputStream;
+import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.methods.GetMethod;
 import org.apache.commons.httpclient.methods.PostMethod;
@@ -53,7 +55,11 @@ public class BematechFiscalJSonClient {
         int r = client.executeMethod(post);
 
         InputStream input = post.getResponseBodyAsStream();
+        
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        //InputStreamReader isr = new InputStreamReader(input, "UTF-8");
+        //InputStreamReader isr = new InputStreamReader(input, "ISO-8859-1");
+        InputStreamReader isr = new InputStreamReader(input, "US-ASCII");
         BufferedInputStream bis = new BufferedInputStream(input);
         int aByte;
         while ((aByte = bis.read()) != -1) {
@@ -62,6 +68,8 @@ public class BematechFiscalJSonClient {
         baos.flush();
         baos.close();
         bis.close();
+        isr.close();
+        input.close();
 
         response = baos.toString();
         content = null;
