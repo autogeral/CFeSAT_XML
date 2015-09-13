@@ -8490,10 +8490,10 @@ public class EnvCFe {
                         "vItem12741",
                         "icms",
                         "issqn",
-                        "pis",
-                        "pisst",
-                        "cofins",
-                        "cofinsst"
+                        "PIS",
+                        "PISst",
+                        "COFINS",
+                        "COFINSst"
                     })
                     public static class Imposto {
 
@@ -8503,13 +8503,13 @@ public class EnvCFe {
                         @XmlElement(name = "ISSQN")
                         protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.ISSQN issqn;
                         @XmlElement(name = "PIS", required = true)
-                        protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS pis;
+                        protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS PIS;
                         @XmlElement(name = "PISST")
-                        protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PISST pisst;
+                        protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PISST PISst;
                         @XmlElement(name = "COFINS", required = true)
-                        protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS cofins;
+                        protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS COFINS;
                         @XmlElement(name = "COFINSST")
-                        protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINSST cofinsst;
+                        protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINSST COFINSst;
 
                         /**
                          * Obt�m o valor da propriedade vItem12741.
@@ -8584,7 +8584,7 @@ public class EnvCFe {
                         }
 
                         /**
-                         * Obt�m o valor da propriedade pis.
+                         * Obt�m o valor da propriedade PIS.
                          * 
                          * @return
                          *     possible object is
@@ -8592,11 +8592,11 @@ public class EnvCFe {
                          *     
                          */
                         public EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS getPIS() {
-                            return pis;
+                            return PIS;
                         }
 
                         /**
-                         * Define o valor da propriedade pis.
+                         * Define o valor da propriedade PIS.
                          * 
                          * @param value
                          *     allowed object is
@@ -8604,11 +8604,11 @@ public class EnvCFe {
                          *     
                          */
                         public void setPIS(EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS value) {
-                            this.pis = value;
+                            this.PIS = value;
                         }
 
                         /**
-                         * Obt�m o valor da propriedade pisst.
+                         * Obt�m o valor da propriedade PISst.
                          * 
                          * @return
                          *     possible object is
@@ -8616,11 +8616,11 @@ public class EnvCFe {
                          *     
                          */
                         public EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PISST getPISST() {
-                            return pisst;
+                            return PISst;
                         }
 
                         /**
-                         * Define o valor da propriedade pisst.
+                         * Define o valor da propriedade PISst.
                          * 
                          * @param value
                          *     allowed object is
@@ -8628,11 +8628,11 @@ public class EnvCFe {
                          *     
                          */
                         public void setPISST(EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PISST value) {
-                            this.pisst = value;
+                            this.PISst = value;
                         }
 
                         /**
-                         * Obt�m o valor da propriedade cofins.
+                         * Obt�m o valor da propriedade COFINS.
                          * 
                          * @return
                          *     possible object is
@@ -8640,11 +8640,11 @@ public class EnvCFe {
                          *     
                          */
                         public EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS getCOFINS() {
-                            return cofins;
+                            return COFINS;
                         }
 
                         /**
-                         * Define o valor da propriedade cofins.
+                         * Define o valor da propriedade COFINS.
                          * 
                          * @param value
                          *     allowed object is
@@ -8652,11 +8652,11 @@ public class EnvCFe {
                          *     
                          */
                         public void setCOFINS(EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS value) {
-                            this.cofins = value;
+                            this.COFINS = value;
                         }
 
                         /**
-                         * Obt�m o valor da propriedade cofinsst.
+                         * Obt�m o valor da propriedade COFINSst.
                          * 
                          * @return
                          *     possible object is
@@ -8664,11 +8664,11 @@ public class EnvCFe {
                          *     
                          */
                         public EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINSST getCOFINSST() {
-                            return cofinsst;
+                            return COFINSst;
                         }
 
                         /**
-                         * Define o valor da propriedade cofinsst.
+                         * Define o valor da propriedade COFINSst.
                          * 
                          * @param value
                          *     allowed object is
@@ -8676,7 +8676,7 @@ public class EnvCFe {
                          *     
                          */
                         public void setCOFINSST(EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINSST value) {
-                            this.cofinsst = value;
+                            this.COFINSst = value;
                         }
 
 
@@ -8868,27 +8868,27 @@ public class EnvCFe {
                          */
                         @XmlAccessorType(XmlAccessType.FIELD)
                         @XmlType(name = "", propOrder = {
-                            "cofinsAliq",
-                            "cofinsQtde",
-                            "cofinsnt",
-                            "cofinssn",
-                            "cofinsOutr"
+                            "COFINSAliq",
+                            "COFINSQtde",
+                            "COFINSnt",
+                            "COFINSsn",
+                            "COFINSOutr"
                         })
                         public static class COFINS {
 
                             @XmlElement(name = "COFINSAliq")
-                            protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS.COFINSAliq cofinsAliq;
+                            protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS.COFINSAliq COFINSAliq;
                             @XmlElement(name = "COFINSQtde")
-                            protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS.COFINSQtde cofinsQtde;
+                            protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS.COFINSQtde COFINSQtde;
                             @XmlElement(name = "COFINSNT")
-                            protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS.COFINSNT cofinsnt;
+                            protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS.COFINSNT COFINSnt;
                             @XmlElement(name = "COFINSSN")
-                            protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS.COFINSSN cofinssn;
+                            protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS.COFINSSN COFINSsn;
                             @XmlElement(name = "COFINSOutr")
-                            protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS.COFINSOutr cofinsOutr;
+                            protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS.COFINSOutr COFINSOutr;
 
                             /**
-                             * Obt�m o valor da propriedade cofinsAliq.
+                             * Obt�m o valor da propriedade COFINSAliq.
                              * 
                              * @return
                              *     possible object is
@@ -8896,11 +8896,11 @@ public class EnvCFe {
                              *     
                              */
                             public EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS.COFINSAliq getCOFINSAliq() {
-                                return cofinsAliq;
+                                return COFINSAliq;
                             }
 
                             /**
-                             * Define o valor da propriedade cofinsAliq.
+                             * Define o valor da propriedade COFINSAliq.
                              * 
                              * @param value
                              *     allowed object is
@@ -8908,11 +8908,11 @@ public class EnvCFe {
                              *     
                              */
                             public void setCOFINSAliq(EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS.COFINSAliq value) {
-                                this.cofinsAliq = value;
+                                this.COFINSAliq = value;
                             }
 
                             /**
-                             * Obt�m o valor da propriedade cofinsQtde.
+                             * Obt�m o valor da propriedade COFINSQtde.
                              * 
                              * @return
                              *     possible object is
@@ -8920,11 +8920,11 @@ public class EnvCFe {
                              *     
                              */
                             public EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS.COFINSQtde getCOFINSQtde() {
-                                return cofinsQtde;
+                                return COFINSQtde;
                             }
 
                             /**
-                             * Define o valor da propriedade cofinsQtde.
+                             * Define o valor da propriedade COFINSQtde.
                              * 
                              * @param value
                              *     allowed object is
@@ -8932,11 +8932,11 @@ public class EnvCFe {
                              *     
                              */
                             public void setCOFINSQtde(EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS.COFINSQtde value) {
-                                this.cofinsQtde = value;
+                                this.COFINSQtde = value;
                             }
 
                             /**
-                             * Obt�m o valor da propriedade cofinsnt.
+                             * Obt�m o valor da propriedade COFINSnt.
                              * 
                              * @return
                              *     possible object is
@@ -8944,11 +8944,11 @@ public class EnvCFe {
                              *     
                              */
                             public EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS.COFINSNT getCOFINSNT() {
-                                return cofinsnt;
+                                return COFINSnt;
                             }
 
                             /**
-                             * Define o valor da propriedade cofinsnt.
+                             * Define o valor da propriedade COFINSnt.
                              * 
                              * @param value
                              *     allowed object is
@@ -8956,11 +8956,11 @@ public class EnvCFe {
                              *     
                              */
                             public void setCOFINSNT(EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS.COFINSNT value) {
-                                this.cofinsnt = value;
+                                this.COFINSnt = value;
                             }
 
                             /**
-                             * Obt�m o valor da propriedade cofinssn.
+                             * Obt�m o valor da propriedade COFINSsn.
                              * 
                              * @return
                              *     possible object is
@@ -8968,11 +8968,11 @@ public class EnvCFe {
                              *     
                              */
                             public EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS.COFINSSN getCOFINSSN() {
-                                return cofinssn;
+                                return COFINSsn;
                             }
 
                             /**
-                             * Define o valor da propriedade cofinssn.
+                             * Define o valor da propriedade COFINSsn.
                              * 
                              * @param value
                              *     allowed object is
@@ -8980,11 +8980,11 @@ public class EnvCFe {
                              *     
                              */
                             public void setCOFINSSN(EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS.COFINSSN value) {
-                                this.cofinssn = value;
+                                this.COFINSsn = value;
                             }
 
                             /**
-                             * Obt�m o valor da propriedade cofinsOutr.
+                             * Obt�m o valor da propriedade COFINSOutr.
                              * 
                              * @return
                              *     possible object is
@@ -8992,11 +8992,11 @@ public class EnvCFe {
                              *     
                              */
                             public EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS.COFINSOutr getCOFINSOutr() {
-                                return cofinsOutr;
+                                return COFINSOutr;
                             }
 
                             /**
-                             * Define o valor da propriedade cofinsOutr.
+                             * Define o valor da propriedade COFINSOutr.
                              * 
                              * @param value
                              *     allowed object is
@@ -9004,7 +9004,7 @@ public class EnvCFe {
                              *     
                              */
                             public void setCOFINSOutr(EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.COFINS.COFINSOutr value) {
-                                this.cofinsOutr = value;
+                                this.COFINSOutr = value;
                             }
 
 
@@ -9056,24 +9056,24 @@ public class EnvCFe {
                              */
                             @XmlAccessorType(XmlAccessType.FIELD)
                             @XmlType(name = "", propOrder = {
-                                "cst",
-                                "vbc",
-                                "pcofins",
-                                "vcofins"
+                                "CST",
+                                "vBC",
+                                "pCOFINS",
+                                "vCOFINS"
                             })
                             public static class COFINSAliq {
 
                                 @XmlElement(name = "CST", required = true)
-                                protected String cst;
+                                protected String CST;
                                 @XmlElement(name = "vBC", required = true)
-                                protected String vbc;
+                                protected String vBC;
                                 @XmlElement(name = "pCOFINS", required = true)
-                                protected String pcofins;
+                                protected String pCOFINS;
                                 @XmlElement(name = "vCOFINS", required = true)
-                                protected String vcofins;
+                                protected String vCOFINS;
 
                                 /**
-                                 * Obt�m o valor da propriedade cst.
+                                 * Obt�m o valor da propriedade CST.
                                  * 
                                  * @return
                                  *     possible object is
@@ -9081,11 +9081,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public String getCST() {
-                                    return cst;
+                                    return CST;
                                 }
 
                                 /**
-                                 * Define o valor da propriedade cst.
+                                 * Define o valor da propriedade CST.
                                  * 
                                  * @param value
                                  *     allowed object is
@@ -9093,7 +9093,7 @@ public class EnvCFe {
                                  *     
                                  */
                                 public void setCST(String value) {
-                                    this.cst = value;
+                                    this.CST = value;
                                 }
 
                                 /**
@@ -9105,7 +9105,7 @@ public class EnvCFe {
                                  *     
                                  */
                                 public String getVBC() {
-                                    return vbc;
+                                    return vBC;
                                 }
 
                                 /**
@@ -9117,11 +9117,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public void setVBC(String value) {
-                                    this.vbc = value;
+                                    this.vBC = value;
                                 }
 
                                 /**
-                                 * Obt�m o valor da propriedade pcofins.
+                                 * Obt�m o valor da propriedade pCOFINS.
                                  * 
                                  * @return
                                  *     possible object is
@@ -9129,11 +9129,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public String getPCOFINS() {
-                                    return pcofins;
+                                    return pCOFINS;
                                 }
 
                                 /**
-                                 * Define o valor da propriedade pcofins.
+                                 * Define o valor da propriedade pCOFINS.
                                  * 
                                  * @param value
                                  *     allowed object is
@@ -9141,11 +9141,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public void setPCOFINS(String value) {
-                                    this.pcofins = value;
+                                    this.pCOFINS = value;
                                 }
 
                                 /**
-                                 * Obt�m o valor da propriedade vcofins.
+                                 * Obt�m o valor da propriedade vCOFINS.
                                  * 
                                  * @return
                                  *     possible object is
@@ -9153,11 +9153,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public String getVCOFINS() {
-                                    return vcofins;
+                                    return vCOFINS;
                                 }
 
                                 /**
-                                 * Define o valor da propriedade vcofins.
+                                 * Define o valor da propriedade vCOFINS.
                                  * 
                                  * @param value
                                  *     allowed object is
@@ -9165,7 +9165,7 @@ public class EnvCFe {
                                  *     
                                  */
                                 public void setVCOFINS(String value) {
-                                    this.vcofins = value;
+                                    this.vCOFINS = value;
                                 }
 
                             }
@@ -9198,15 +9198,15 @@ public class EnvCFe {
                              */
                             @XmlAccessorType(XmlAccessType.FIELD)
                             @XmlType(name = "", propOrder = {
-                                "cst"
+                                "CST"
                             })
                             public static class COFINSNT {
 
                                 @XmlElement(name = "CST", required = true)
-                                protected String cst;
+                                protected String CST;
 
                                 /**
-                                 * Obt�m o valor da propriedade cst.
+                                 * Obt�m o valor da propriedade CST.
                                  * 
                                  * @return
                                  *     possible object is
@@ -9214,11 +9214,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public String getCST() {
-                                    return cst;
+                                    return CST;
                                 }
 
                                 /**
-                                 * Define o valor da propriedade cst.
+                                 * Define o valor da propriedade CST.
                                  * 
                                  * @param value
                                  *     allowed object is
@@ -9226,7 +9226,7 @@ public class EnvCFe {
                                  *     
                                  */
                                 public void setCST(String value) {
-                                    this.cst = value;
+                                    this.CST = value;
                                 }
 
                             }
@@ -9300,15 +9300,15 @@ public class EnvCFe {
                              */
                             @XmlAccessorType(XmlAccessType.FIELD)
                             @XmlType(name = "", propOrder = {
-                                "cst",
+                                "CST",
                                 "vbcOrPCOFINS",
                                 "qbcProdOrVAliqProd",
-                                "vcofins"
+                                "vCOFINS"
                             })
                             public static class COFINSOutr {
 
                                 @XmlElement(name = "CST", required = true)
-                                protected String cst;
+                                protected String CST;
                                 @XmlElementRefs({
                                     @XmlElementRef(name = "vBC", type = JAXBElement.class, required = false),
                                     @XmlElementRef(name = "pCOFINS", type = JAXBElement.class, required = false)
@@ -9320,10 +9320,10 @@ public class EnvCFe {
                                 })
                                 protected List<JAXBElement<String>> qbcProdOrVAliqProd;
                                 @XmlElement(name = "vCOFINS", required = true)
-                                protected String vcofins;
+                                protected String vCOFINS;
 
                                 /**
-                                 * Obt�m o valor da propriedade cst.
+                                 * Obt�m o valor da propriedade CST.
                                  * 
                                  * @return
                                  *     possible object is
@@ -9331,11 +9331,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public String getCST() {
-                                    return cst;
+                                    return CST;
                                 }
 
                                 /**
-                                 * Define o valor da propriedade cst.
+                                 * Define o valor da propriedade CST.
                                  * 
                                  * @param value
                                  *     allowed object is
@@ -9343,7 +9343,7 @@ public class EnvCFe {
                                  *     
                                  */
                                 public void setCST(String value) {
-                                    this.cst = value;
+                                    this.CST = value;
                                 }
 
                                 /**
@@ -9407,7 +9407,7 @@ public class EnvCFe {
                                 }
 
                                 /**
-                                 * Obt�m o valor da propriedade vcofins.
+                                 * Obt�m o valor da propriedade vCOFINS.
                                  * 
                                  * @return
                                  *     possible object is
@@ -9415,11 +9415,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public String getVCOFINS() {
-                                    return vcofins;
+                                    return vCOFINS;
                                 }
 
                                 /**
-                                 * Define o valor da propriedade vcofins.
+                                 * Define o valor da propriedade vCOFINS.
                                  * 
                                  * @param value
                                  *     allowed object is
@@ -9427,7 +9427,7 @@ public class EnvCFe {
                                  *     
                                  */
                                 public void setVCOFINS(String value) {
-                                    this.vcofins = value;
+                                    this.vCOFINS = value;
                                 }
 
                             }
@@ -9481,24 +9481,24 @@ public class EnvCFe {
                              */
                             @XmlAccessorType(XmlAccessType.FIELD)
                             @XmlType(name = "", propOrder = {
-                                "cst",
+                                "CST",
                                 "qbcProd",
                                 "vAliqProd",
-                                "vcofins"
+                                "vCOFINS"
                             })
                             public static class COFINSQtde {
 
                                 @XmlElement(name = "CST", required = true)
-                                protected String cst;
+                                protected String CST;
                                 @XmlElement(name = "qBCProd", required = true)
                                 protected String qbcProd;
                                 @XmlElement(required = true)
                                 protected String vAliqProd;
                                 @XmlElement(name = "vCOFINS", required = true)
-                                protected String vcofins;
+                                protected String vCOFINS;
 
                                 /**
-                                 * Obt�m o valor da propriedade cst.
+                                 * Obt�m o valor da propriedade CST.
                                  * 
                                  * @return
                                  *     possible object is
@@ -9506,11 +9506,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public String getCST() {
-                                    return cst;
+                                    return CST;
                                 }
 
                                 /**
-                                 * Define o valor da propriedade cst.
+                                 * Define o valor da propriedade CST.
                                  * 
                                  * @param value
                                  *     allowed object is
@@ -9518,7 +9518,7 @@ public class EnvCFe {
                                  *     
                                  */
                                 public void setCST(String value) {
-                                    this.cst = value;
+                                    this.CST = value;
                                 }
 
                                 /**
@@ -9570,7 +9570,7 @@ public class EnvCFe {
                                 }
 
                                 /**
-                                 * Obt�m o valor da propriedade vcofins.
+                                 * Obt�m o valor da propriedade vCOFINS.
                                  * 
                                  * @return
                                  *     possible object is
@@ -9578,11 +9578,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public String getVCOFINS() {
-                                    return vcofins;
+                                    return vCOFINS;
                                 }
 
                                 /**
-                                 * Define o valor da propriedade vcofins.
+                                 * Define o valor da propriedade vCOFINS.
                                  * 
                                  * @param value
                                  *     allowed object is
@@ -9590,7 +9590,7 @@ public class EnvCFe {
                                  *     
                                  */
                                 public void setVCOFINS(String value) {
-                                    this.vcofins = value;
+                                    this.vCOFINS = value;
                                 }
 
                             }
@@ -9623,15 +9623,15 @@ public class EnvCFe {
                              */
                             @XmlAccessorType(XmlAccessType.FIELD)
                             @XmlType(name = "", propOrder = {
-                                "cst"
+                                "CST"
                             })
                             public static class COFINSSN {
 
                                 @XmlElement(name = "CST", required = true)
-                                protected String cst;
+                                protected String CST;
 
                                 /**
-                                 * Obt�m o valor da propriedade cst.
+                                 * Obt�m o valor da propriedade CST.
                                  * 
                                  * @return
                                  *     possible object is
@@ -9639,11 +9639,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public String getCST() {
-                                    return cst;
+                                    return CST;
                                 }
 
                                 /**
-                                 * Define o valor da propriedade cst.
+                                 * Define o valor da propriedade CST.
                                  * 
                                  * @param value
                                  *     allowed object is
@@ -9651,7 +9651,7 @@ public class EnvCFe {
                                  *     
                                  */
                                 public void setCST(String value) {
-                                    this.cst = value;
+                                    this.CST = value;
                                 }
 
                             }
@@ -9722,7 +9722,7 @@ public class EnvCFe {
                         @XmlType(name = "", propOrder = {
                             "vbcOrPCOFINS",
                             "qbcProdOrVAliqProd",
-                            "vcofins"
+                            "vCOFINS"
                         })
                         public static class COFINSST {
 
@@ -9737,7 +9737,7 @@ public class EnvCFe {
                             })
                             protected List<JAXBElement<String>> qbcProdOrVAliqProd;
                             @XmlElement(name = "vCOFINS", required = true)
-                            protected String vcofins;
+                            protected String vCOFINS;
 
                             /**
                              * Gets the value of the vbcOrPCOFINS property.
@@ -9800,7 +9800,7 @@ public class EnvCFe {
                             }
 
                             /**
-                             * Obt�m o valor da propriedade vcofins.
+                             * Obt�m o valor da propriedade vCOFINS.
                              * 
                              * @return
                              *     possible object is
@@ -9808,11 +9808,11 @@ public class EnvCFe {
                              *     
                              */
                             public String getVCOFINS() {
-                                return vcofins;
+                                return vCOFINS;
                             }
 
                             /**
-                             * Define o valor da propriedade vcofins.
+                             * Define o valor da propriedade vCOFINS.
                              * 
                              * @param value
                              *     allowed object is
@@ -9820,7 +9820,7 @@ public class EnvCFe {
                              *     
                              */
                             public void setVCOFINS(String value) {
-                                this.vcofins = value;
+                                this.vCOFINS = value;
                             }
 
                         }
@@ -10132,7 +10132,7 @@ public class EnvCFe {
                             @XmlAccessorType(XmlAccessType.FIELD)
                             @XmlType(name = "", propOrder = {
                                 "orig",
-                                "cst",
+                                "CST",
                                 "picms",
                                 "vicms"
                             })
@@ -10141,7 +10141,7 @@ public class EnvCFe {
                                 @XmlElement(name = "Orig", required = true)
                                 protected String orig;
                                 @XmlElement(name = "CST", required = true)
-                                protected String cst;
+                                protected String CST;
                                 @XmlElement(name = "pICMS", required = true)
                                 protected String picms;
                                 @XmlElement(name = "vICMS", required = true)
@@ -10172,7 +10172,7 @@ public class EnvCFe {
                                 }
 
                                 /**
-                                 * Obt�m o valor da propriedade cst.
+                                 * Obt�m o valor da propriedade CST.
                                  * 
                                  * @return
                                  *     possible object is
@@ -10180,11 +10180,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public String getCST() {
-                                    return cst;
+                                    return CST;
                                 }
 
                                 /**
-                                 * Define o valor da propriedade cst.
+                                 * Define o valor da propriedade CST.
                                  * 
                                  * @param value
                                  *     allowed object is
@@ -10192,7 +10192,7 @@ public class EnvCFe {
                                  *     
                                  */
                                 public void setCST(String value) {
-                                    this.cst = value;
+                                    this.CST = value;
                                 }
 
                                 /**
@@ -10281,14 +10281,14 @@ public class EnvCFe {
                             @XmlAccessorType(XmlAccessType.FIELD)
                             @XmlType(name = "", propOrder = {
                                 "orig",
-                                "cst"
+                                "CST"
                             })
                             public static class ICMS40 {
 
                                 @XmlElement(name = "Orig", required = true)
                                 protected String orig;
                                 @XmlElement(name = "CST", required = true)
-                                protected String cst;
+                                protected String CST;
 
                                 /**
                                  * Obt�m o valor da propriedade orig.
@@ -10315,7 +10315,7 @@ public class EnvCFe {
                                 }
 
                                 /**
-                                 * Obt�m o valor da propriedade cst.
+                                 * Obt�m o valor da propriedade CST.
                                  * 
                                  * @return
                                  *     possible object is
@@ -10323,11 +10323,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public String getCST() {
-                                    return cst;
+                                    return CST;
                                 }
 
                                 /**
-                                 * Define o valor da propriedade cst.
+                                 * Define o valor da propriedade CST.
                                  * 
                                  * @param value
                                  *     allowed object is
@@ -10335,7 +10335,7 @@ public class EnvCFe {
                                  *     
                                  */
                                 public void setCST(String value) {
-                                    this.cst = value;
+                                    this.CST = value;
                                 }
 
                             }
@@ -11119,27 +11119,27 @@ public class EnvCFe {
                          */
                         @XmlAccessorType(XmlAccessType.FIELD)
                         @XmlType(name = "", propOrder = {
-                            "pisAliq",
-                            "pisQtde",
-                            "pisnt",
-                            "pissn",
-                            "pisOutr"
+                            "PISAliq",
+                            "PISQtde",
+                            "PISnt",
+                            "PISsn",
+                            "PISOutr"
                         })
                         public static class PIS {
 
                             @XmlElement(name = "PISAliq")
-                            protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS.PISAliq pisAliq;
+                            protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS.PISAliq PISAliq;
                             @XmlElement(name = "PISQtde")
-                            protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS.PISQtde pisQtde;
+                            protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS.PISQtde PISQtde;
                             @XmlElement(name = "PISNT")
-                            protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS.PISNT pisnt;
+                            protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS.PISNT PISnt;
                             @XmlElement(name = "PISSN")
-                            protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS.PISSN pissn;
+                            protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS.PISSN PISsn;
                             @XmlElement(name = "PISOutr")
-                            protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS.PISOutr pisOutr;
+                            protected EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS.PISOutr PISOutr;
 
                             /**
-                             * Obt�m o valor da propriedade pisAliq.
+                             * Obt�m o valor da propriedade PISAliq.
                              * 
                              * @return
                              *     possible object is
@@ -11147,11 +11147,11 @@ public class EnvCFe {
                              *     
                              */
                             public EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS.PISAliq getPISAliq() {
-                                return pisAliq;
+                                return PISAliq;
                             }
 
                             /**
-                             * Define o valor da propriedade pisAliq.
+                             * Define o valor da propriedade PISAliq.
                              * 
                              * @param value
                              *     allowed object is
@@ -11159,11 +11159,11 @@ public class EnvCFe {
                              *     
                              */
                             public void setPISAliq(EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS.PISAliq value) {
-                                this.pisAliq = value;
+                                this.PISAliq = value;
                             }
 
                             /**
-                             * Obt�m o valor da propriedade pisQtde.
+                             * Obt�m o valor da propriedade PISQtde.
                              * 
                              * @return
                              *     possible object is
@@ -11171,11 +11171,11 @@ public class EnvCFe {
                              *     
                              */
                             public EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS.PISQtde getPISQtde() {
-                                return pisQtde;
+                                return PISQtde;
                             }
 
                             /**
-                             * Define o valor da propriedade pisQtde.
+                             * Define o valor da propriedade PISQtde.
                              * 
                              * @param value
                              *     allowed object is
@@ -11183,11 +11183,11 @@ public class EnvCFe {
                              *     
                              */
                             public void setPISQtde(EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS.PISQtde value) {
-                                this.pisQtde = value;
+                                this.PISQtde = value;
                             }
 
                             /**
-                             * Obt�m o valor da propriedade pisnt.
+                             * Obt�m o valor da propriedade PISnt.
                              * 
                              * @return
                              *     possible object is
@@ -11195,11 +11195,11 @@ public class EnvCFe {
                              *     
                              */
                             public EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS.PISNT getPISNT() {
-                                return pisnt;
+                                return PISnt;
                             }
 
                             /**
-                             * Define o valor da propriedade pisnt.
+                             * Define o valor da propriedade PISnt.
                              * 
                              * @param value
                              *     allowed object is
@@ -11207,11 +11207,11 @@ public class EnvCFe {
                              *     
                              */
                             public void setPISNT(EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS.PISNT value) {
-                                this.pisnt = value;
+                                this.PISnt = value;
                             }
 
                             /**
-                             * Obt�m o valor da propriedade pissn.
+                             * Obt�m o valor da propriedade PISsn.
                              * 
                              * @return
                              *     possible object is
@@ -11219,11 +11219,11 @@ public class EnvCFe {
                              *     
                              */
                             public EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS.PISSN getPISSN() {
-                                return pissn;
+                                return PISsn;
                             }
 
                             /**
-                             * Define o valor da propriedade pissn.
+                             * Define o valor da propriedade PISsn.
                              * 
                              * @param value
                              *     allowed object is
@@ -11231,11 +11231,11 @@ public class EnvCFe {
                              *     
                              */
                             public void setPISSN(EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS.PISSN value) {
-                                this.pissn = value;
+                                this.PISsn = value;
                             }
 
                             /**
-                             * Obt�m o valor da propriedade pisOutr.
+                             * Obt�m o valor da propriedade PISOutr.
                              * 
                              * @return
                              *     possible object is
@@ -11243,11 +11243,11 @@ public class EnvCFe {
                              *     
                              */
                             public EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS.PISOutr getPISOutr() {
-                                return pisOutr;
+                                return PISOutr;
                             }
 
                             /**
-                             * Define o valor da propriedade pisOutr.
+                             * Define o valor da propriedade PISOutr.
                              * 
                              * @param value
                              *     allowed object is
@@ -11255,7 +11255,7 @@ public class EnvCFe {
                              *     
                              */
                             public void setPISOutr(EnvCFe.LoteCFe.CFe.InfCFe.Det.Imposto.PIS.PISOutr value) {
-                                this.pisOutr = value;
+                                this.PISOutr = value;
                             }
 
 
@@ -11307,24 +11307,24 @@ public class EnvCFe {
                              */
                             @XmlAccessorType(XmlAccessType.FIELD)
                             @XmlType(name = "", propOrder = {
-                                "cst",
+                                "CST",
                                 "vbc",
-                                "ppis",
-                                "vpis"
+                                "pPIS",
+                                "vPIS"
                             })
                             public static class PISAliq {
 
                                 @XmlElement(name = "CST", required = true)
-                                protected String cst;
+                                protected String CST;
                                 @XmlElement(name = "vBC", required = true)
                                 protected String vbc;
                                 @XmlElement(name = "pPIS", required = true)
-                                protected String ppis;
+                                protected String pPIS;
                                 @XmlElement(name = "vPIS", required = true)
-                                protected String vpis;
+                                protected String vPIS;
 
                                 /**
-                                 * Obt�m o valor da propriedade cst.
+                                 * Obt�m o valor da propriedade CST.
                                  * 
                                  * @return
                                  *     possible object is
@@ -11332,11 +11332,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public String getCST() {
-                                    return cst;
+                                    return CST;
                                 }
 
                                 /**
-                                 * Define o valor da propriedade cst.
+                                 * Define o valor da propriedade CST.
                                  * 
                                  * @param value
                                  *     allowed object is
@@ -11344,7 +11344,7 @@ public class EnvCFe {
                                  *     
                                  */
                                 public void setCST(String value) {
-                                    this.cst = value;
+                                    this.CST = value;
                                 }
 
                                 /**
@@ -11372,7 +11372,7 @@ public class EnvCFe {
                                 }
 
                                 /**
-                                 * Obt�m o valor da propriedade ppis.
+                                 * Obt�m o valor da propriedade pPIS.
                                  * 
                                  * @return
                                  *     possible object is
@@ -11380,11 +11380,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public String getPPIS() {
-                                    return ppis;
+                                    return pPIS;
                                 }
 
                                 /**
-                                 * Define o valor da propriedade ppis.
+                                 * Define o valor da propriedade pPIS.
                                  * 
                                  * @param value
                                  *     allowed object is
@@ -11392,11 +11392,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public void setPPIS(String value) {
-                                    this.ppis = value;
+                                    this.pPIS = value;
                                 }
 
                                 /**
-                                 * Obt�m o valor da propriedade vpis.
+                                 * Obt�m o valor da propriedade vPIS.
                                  * 
                                  * @return
                                  *     possible object is
@@ -11404,11 +11404,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public String getVPIS() {
-                                    return vpis;
+                                    return vPIS;
                                 }
 
                                 /**
-                                 * Define o valor da propriedade vpis.
+                                 * Define o valor da propriedade vPIS.
                                  * 
                                  * @param value
                                  *     allowed object is
@@ -11416,7 +11416,7 @@ public class EnvCFe {
                                  *     
                                  */
                                 public void setVPIS(String value) {
-                                    this.vpis = value;
+                                    this.vPIS = value;
                                 }
 
                             }
@@ -11449,15 +11449,15 @@ public class EnvCFe {
                              */
                             @XmlAccessorType(XmlAccessType.FIELD)
                             @XmlType(name = "", propOrder = {
-                                "cst"
+                                "CST"
                             })
                             public static class PISNT {
 
                                 @XmlElement(name = "CST", required = true)
-                                protected String cst;
+                                protected String CST;
 
                                 /**
-                                 * Obt�m o valor da propriedade cst.
+                                 * Obt�m o valor da propriedade CST.
                                  * 
                                  * @return
                                  *     possible object is
@@ -11465,11 +11465,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public String getCST() {
-                                    return cst;
+                                    return CST;
                                 }
 
                                 /**
-                                 * Define o valor da propriedade cst.
+                                 * Define o valor da propriedade CST.
                                  * 
                                  * @param value
                                  *     allowed object is
@@ -11477,7 +11477,7 @@ public class EnvCFe {
                                  *     
                                  */
                                 public void setCST(String value) {
-                                    this.cst = value;
+                                    this.CST = value;
                                 }
 
                             }
@@ -11551,15 +11551,15 @@ public class EnvCFe {
                              */
                             @XmlAccessorType(XmlAccessType.FIELD)
                             @XmlType(name = "", propOrder = {
-                                "cst",
+                                "CST",
                                 "vbcOrPPIS",
                                 "qbcProdOrVAliqProd",
-                                "vpis"
+                                "vPIS"
                             })
                             public static class PISOutr {
 
                                 @XmlElement(name = "CST", required = true)
-                                protected String cst;
+                                protected String CST;
                                 @XmlElementRefs({
                                     @XmlElementRef(name = "vBC", type = JAXBElement.class, required = false),
                                     @XmlElementRef(name = "pPIS", type = JAXBElement.class, required = false)
@@ -11571,10 +11571,10 @@ public class EnvCFe {
                                 })
                                 protected List<JAXBElement<String>> qbcProdOrVAliqProd;
                                 @XmlElement(name = "vPIS", required = true)
-                                protected String vpis;
+                                protected String vPIS;
 
                                 /**
-                                 * Obt�m o valor da propriedade cst.
+                                 * Obt�m o valor da propriedade CST.
                                  * 
                                  * @return
                                  *     possible object is
@@ -11582,11 +11582,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public String getCST() {
-                                    return cst;
+                                    return CST;
                                 }
 
                                 /**
-                                 * Define o valor da propriedade cst.
+                                 * Define o valor da propriedade CST.
                                  * 
                                  * @param value
                                  *     allowed object is
@@ -11594,7 +11594,7 @@ public class EnvCFe {
                                  *     
                                  */
                                 public void setCST(String value) {
-                                    this.cst = value;
+                                    this.CST = value;
                                 }
 
                                 /**
@@ -11658,7 +11658,7 @@ public class EnvCFe {
                                 }
 
                                 /**
-                                 * Obt�m o valor da propriedade vpis.
+                                 * Obt�m o valor da propriedade vPIS.
                                  * 
                                  * @return
                                  *     possible object is
@@ -11666,11 +11666,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public String getVPIS() {
-                                    return vpis;
+                                    return vPIS;
                                 }
 
                                 /**
-                                 * Define o valor da propriedade vpis.
+                                 * Define o valor da propriedade vPIS.
                                  * 
                                  * @param value
                                  *     allowed object is
@@ -11678,7 +11678,7 @@ public class EnvCFe {
                                  *     
                                  */
                                 public void setVPIS(String value) {
-                                    this.vpis = value;
+                                    this.vPIS = value;
                                 }
 
                             }
@@ -11732,24 +11732,24 @@ public class EnvCFe {
                              */
                             @XmlAccessorType(XmlAccessType.FIELD)
                             @XmlType(name = "", propOrder = {
-                                "cst",
+                                "CST",
                                 "qbcProd",
                                 "vAliqProd",
-                                "vpis"
+                                "vPIS"
                             })
                             public static class PISQtde {
 
                                 @XmlElement(name = "CST", required = true)
-                                protected String cst;
+                                protected String CST;
                                 @XmlElement(name = "qBCProd", required = true)
                                 protected String qbcProd;
                                 @XmlElement(required = true)
                                 protected String vAliqProd;
                                 @XmlElement(name = "vPIS", required = true)
-                                protected String vpis;
+                                protected String vPIS;
 
                                 /**
-                                 * Obt�m o valor da propriedade cst.
+                                 * Obt�m o valor da propriedade CST.
                                  * 
                                  * @return
                                  *     possible object is
@@ -11757,11 +11757,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public String getCST() {
-                                    return cst;
+                                    return CST;
                                 }
 
                                 /**
-                                 * Define o valor da propriedade cst.
+                                 * Define o valor da propriedade CST.
                                  * 
                                  * @param value
                                  *     allowed object is
@@ -11769,7 +11769,7 @@ public class EnvCFe {
                                  *     
                                  */
                                 public void setCST(String value) {
-                                    this.cst = value;
+                                    this.CST = value;
                                 }
 
                                 /**
@@ -11821,7 +11821,7 @@ public class EnvCFe {
                                 }
 
                                 /**
-                                 * Obt�m o valor da propriedade vpis.
+                                 * Obt�m o valor da propriedade vPIS.
                                  * 
                                  * @return
                                  *     possible object is
@@ -11829,11 +11829,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public String getVPIS() {
-                                    return vpis;
+                                    return vPIS;
                                 }
 
                                 /**
-                                 * Define o valor da propriedade vpis.
+                                 * Define o valor da propriedade vPIS.
                                  * 
                                  * @param value
                                  *     allowed object is
@@ -11841,7 +11841,7 @@ public class EnvCFe {
                                  *     
                                  */
                                 public void setVPIS(String value) {
-                                    this.vpis = value;
+                                    this.vPIS = value;
                                 }
 
                             }
@@ -11874,15 +11874,15 @@ public class EnvCFe {
                              */
                             @XmlAccessorType(XmlAccessType.FIELD)
                             @XmlType(name = "", propOrder = {
-                                "cst"
+                                "CST"
                             })
                             public static class PISSN {
 
                                 @XmlElement(name = "CST", required = true)
-                                protected String cst;
+                                protected String CST;
 
                                 /**
-                                 * Obt�m o valor da propriedade cst.
+                                 * Obt�m o valor da propriedade CST.
                                  * 
                                  * @return
                                  *     possible object is
@@ -11890,11 +11890,11 @@ public class EnvCFe {
                                  *     
                                  */
                                 public String getCST() {
-                                    return cst;
+                                    return CST;
                                 }
 
                                 /**
-                                 * Define o valor da propriedade cst.
+                                 * Define o valor da propriedade CST.
                                  * 
                                  * @param value
                                  *     allowed object is
@@ -11902,7 +11902,7 @@ public class EnvCFe {
                                  *     
                                  */
                                 public void setCST(String value) {
-                                    this.cst = value;
+                                    this.CST = value;
                                 }
 
                             }
@@ -11973,7 +11973,7 @@ public class EnvCFe {
                         @XmlType(name = "", propOrder = {
                             "vbcOrPPIS",
                             "qbcProdOrVAliqProd",
-                            "vpis"
+                            "vPIS"
                         })
                         public static class PISST {
 
@@ -11988,7 +11988,7 @@ public class EnvCFe {
                             })
                             protected List<JAXBElement<String>> qbcProdOrVAliqProd;
                             @XmlElement(name = "vPIS", required = true)
-                            protected String vpis;
+                            protected String vPIS;
 
                             /**
                              * Gets the value of the vbcOrPPIS property.
@@ -12051,7 +12051,7 @@ public class EnvCFe {
                             }
 
                             /**
-                             * Obt�m o valor da propriedade vpis.
+                             * Obt�m o valor da propriedade vPIS.
                              * 
                              * @return
                              *     possible object is
@@ -12059,11 +12059,11 @@ public class EnvCFe {
                              *     
                              */
                             public String getVPIS() {
-                                return vpis;
+                                return vPIS;
                             }
 
                             /**
-                             * Define o valor da propriedade vpis.
+                             * Define o valor da propriedade vPIS.
                              * 
                              * @param value
                              *     allowed object is
@@ -12071,7 +12071,7 @@ public class EnvCFe {
                              *     
                              */
                             public void setVPIS(String value) {
-                                this.vpis = value;
+                                this.vPIS = value;
                             }
 
                         }
@@ -14470,16 +14470,16 @@ public class EnvCFe {
                      */
                     @XmlAccessorType(XmlAccessType.FIELD)
                     @XmlType(name = "", propOrder = {
-                        "cmp",
-                        "vmp",
+                        "cMP",
+                        "vMP",
                         "cAdmC"
                     })
                     public static class MP {
 
                         @XmlElement(name = "cMP", required = true)
-                        protected String cmp;
+                        protected String cMP;
                         @XmlElement(name = "vMP", required = true)
-                        protected String vmp;
+                        protected String vMP;
                         protected String cAdmC;
 
                         /**
@@ -14491,7 +14491,7 @@ public class EnvCFe {
                          *     
                          */
                         public String getCMP() {
-                            return cmp;
+                            return cMP;
                         }
 
                         /**
@@ -14503,7 +14503,7 @@ public class EnvCFe {
                          *     
                          */
                         public void setCMP(String value) {
-                            this.cmp = value;
+                            this.cMP = value;
                         }
 
                         /**
@@ -14515,7 +14515,7 @@ public class EnvCFe {
                          *     
                          */
                         public String getVMP() {
-                            return vmp;
+                            return vMP;
                         }
 
                         /**
@@ -14527,7 +14527,7 @@ public class EnvCFe {
                          *     
                          */
                         public void setVMP(String value) {
-                            this.vmp = value;
+                            this.vMP = value;
                         }
 
                         /**
@@ -15047,10 +15047,10 @@ public class EnvCFe {
                         "vicms",
                         "vProd",
                         "vDesc",
-                        "vpis",
-                        "vcofins",
-                        "vpisst",
-                        "vcofinsst",
+                        "vPIS",
+                        "vCOFINS",
+                        "vPISst",
+                        "vCOFINSst",
                         "vOutro"
                     })
                     public static class ICMSTot {
@@ -15062,13 +15062,13 @@ public class EnvCFe {
                         @XmlElement(required = true)
                         protected String vDesc;
                         @XmlElement(name = "vPIS", required = true)
-                        protected String vpis;
+                        protected String vPIS;
                         @XmlElement(name = "vCOFINS", required = true)
-                        protected String vcofins;
+                        protected String vCOFINS;
                         @XmlElement(name = "vPISST", required = true)
-                        protected String vpisst;
+                        protected String vPISst;
                         @XmlElement(name = "vCOFINSST", required = true)
-                        protected String vcofinsst;
+                        protected String vCOFINSst;
                         @XmlElement(required = true)
                         protected String vOutro;
 
@@ -15145,7 +15145,7 @@ public class EnvCFe {
                         }
 
                         /**
-                         * Obt�m o valor da propriedade vpis.
+                         * Obt�m o valor da propriedade vPIS.
                          * 
                          * @return
                          *     possible object is
@@ -15153,11 +15153,11 @@ public class EnvCFe {
                          *     
                          */
                         public String getVPIS() {
-                            return vpis;
+                            return vPIS;
                         }
 
                         /**
-                         * Define o valor da propriedade vpis.
+                         * Define o valor da propriedade vPIS.
                          * 
                          * @param value
                          *     allowed object is
@@ -15165,11 +15165,11 @@ public class EnvCFe {
                          *     
                          */
                         public void setVPIS(String value) {
-                            this.vpis = value;
+                            this.vPIS = value;
                         }
 
                         /**
-                         * Obt�m o valor da propriedade vcofins.
+                         * Obt�m o valor da propriedade vCOFINS.
                          * 
                          * @return
                          *     possible object is
@@ -15177,11 +15177,11 @@ public class EnvCFe {
                          *     
                          */
                         public String getVCOFINS() {
-                            return vcofins;
+                            return vCOFINS;
                         }
 
                         /**
-                         * Define o valor da propriedade vcofins.
+                         * Define o valor da propriedade vCOFINS.
                          * 
                          * @param value
                          *     allowed object is
@@ -15189,11 +15189,11 @@ public class EnvCFe {
                          *     
                          */
                         public void setVCOFINS(String value) {
-                            this.vcofins = value;
+                            this.vCOFINS = value;
                         }
 
                         /**
-                         * Obt�m o valor da propriedade vpisst.
+                         * Obt�m o valor da propriedade vPISst.
                          * 
                          * @return
                          *     possible object is
@@ -15201,11 +15201,11 @@ public class EnvCFe {
                          *     
                          */
                         public String getVPISST() {
-                            return vpisst;
+                            return vPISst;
                         }
 
                         /**
-                         * Define o valor da propriedade vpisst.
+                         * Define o valor da propriedade vPISst.
                          * 
                          * @param value
                          *     allowed object is
@@ -15213,11 +15213,11 @@ public class EnvCFe {
                          *     
                          */
                         public void setVPISST(String value) {
-                            this.vpisst = value;
+                            this.vPISst = value;
                         }
 
                         /**
-                         * Obt�m o valor da propriedade vcofinsst.
+                         * Obt�m o valor da propriedade vCOFINSst.
                          * 
                          * @return
                          *     possible object is
@@ -15225,11 +15225,11 @@ public class EnvCFe {
                          *     
                          */
                         public String getVCOFINSST() {
-                            return vcofinsst;
+                            return vCOFINSst;
                         }
 
                         /**
-                         * Define o valor da propriedade vcofinsst.
+                         * Define o valor da propriedade vCOFINSst.
                          * 
                          * @param value
                          *     allowed object is
@@ -15237,7 +15237,7 @@ public class EnvCFe {
                          *     
                          */
                         public void setVCOFINSST(String value) {
-                            this.vcofinsst = value;
+                            this.vCOFINSst = value;
                         }
 
                         /**
@@ -15331,10 +15331,10 @@ public class EnvCFe {
                     @XmlType(name = "", propOrder = {
                         "vbc",
                         "viss",
-                        "vpis",
-                        "vcofins",
-                        "vpisst",
-                        "vcofinsst"
+                        "vPIS",
+                        "vCOFINS",
+                        "vPISst",
+                        "vCOFINSst"
                     })
                     public static class ISSQNtot {
 
@@ -15343,13 +15343,13 @@ public class EnvCFe {
                         @XmlElement(name = "vISS", required = true)
                         protected String viss;
                         @XmlElement(name = "vPIS", required = true)
-                        protected String vpis;
+                        protected String vPIS;
                         @XmlElement(name = "vCOFINS", required = true)
-                        protected String vcofins;
+                        protected String vCOFINS;
                         @XmlElement(name = "vPISST", required = true)
-                        protected String vpisst;
+                        protected String vPISst;
                         @XmlElement(name = "vCOFINSST", required = true)
-                        protected String vcofinsst;
+                        protected String vCOFINSst;
 
                         /**
                          * Obt�m o valor da propriedade vbc.
@@ -15400,7 +15400,7 @@ public class EnvCFe {
                         }
 
                         /**
-                         * Obt�m o valor da propriedade vpis.
+                         * Obt�m o valor da propriedade vPIS.
                          * 
                          * @return
                          *     possible object is
@@ -15408,11 +15408,11 @@ public class EnvCFe {
                          *     
                          */
                         public String getVPIS() {
-                            return vpis;
+                            return vPIS;
                         }
 
                         /**
-                         * Define o valor da propriedade vpis.
+                         * Define o valor da propriedade vPIS.
                          * 
                          * @param value
                          *     allowed object is
@@ -15420,11 +15420,11 @@ public class EnvCFe {
                          *     
                          */
                         public void setVPIS(String value) {
-                            this.vpis = value;
+                            this.vPIS = value;
                         }
 
                         /**
-                         * Obt�m o valor da propriedade vcofins.
+                         * Obt�m o valor da propriedade vCOFINS.
                          * 
                          * @return
                          *     possible object is
@@ -15432,11 +15432,11 @@ public class EnvCFe {
                          *     
                          */
                         public String getVCOFINS() {
-                            return vcofins;
+                            return vCOFINS;
                         }
 
                         /**
-                         * Define o valor da propriedade vcofins.
+                         * Define o valor da propriedade vCOFINS.
                          * 
                          * @param value
                          *     allowed object is
@@ -15444,11 +15444,11 @@ public class EnvCFe {
                          *     
                          */
                         public void setVCOFINS(String value) {
-                            this.vcofins = value;
+                            this.vCOFINS = value;
                         }
 
                         /**
-                         * Obt�m o valor da propriedade vpisst.
+                         * Obt�m o valor da propriedade vPISst.
                          * 
                          * @return
                          *     possible object is
@@ -15456,11 +15456,11 @@ public class EnvCFe {
                          *     
                          */
                         public String getVPISST() {
-                            return vpisst;
+                            return vPISst;
                         }
 
                         /**
-                         * Define o valor da propriedade vpisst.
+                         * Define o valor da propriedade vPISst.
                          * 
                          * @param value
                          *     allowed object is
@@ -15468,11 +15468,11 @@ public class EnvCFe {
                          *     
                          */
                         public void setVPISST(String value) {
-                            this.vpisst = value;
+                            this.vPISst = value;
                         }
 
                         /**
-                         * Obt�m o valor da propriedade vcofinsst.
+                         * Obt�m o valor da propriedade vCOFINSst.
                          * 
                          * @return
                          *     possible object is
@@ -15480,11 +15480,11 @@ public class EnvCFe {
                          *     
                          */
                         public String getVCOFINSST() {
-                            return vcofinsst;
+                            return vCOFINSst;
                         }
 
                         /**
-                         * Define o valor da propriedade vcofinsst.
+                         * Define o valor da propriedade vCOFINSst.
                          * 
                          * @param value
                          *     allowed object is
@@ -15492,7 +15492,7 @@ public class EnvCFe {
                          *     
                          */
                         public void setVCOFINSST(String value) {
-                            this.vcofinsst = value;
+                            this.vCOFINSst = value;
                         }
 
                     }
