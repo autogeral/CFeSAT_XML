@@ -10,6 +10,7 @@ import javax.xml.bind.annotation.XmlList;
  */
 public class VendaVO {
 
+    private String msg;
     private String sessao;
     private String tipoDocumento;
     private String uuid;
@@ -28,6 +29,14 @@ public class VendaVO {
     private String nCFe;
     @XmlList
     private List<String> problemas;
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
 
     public String getSessao() {
         return sessao;
@@ -167,6 +176,19 @@ public class VendaVO {
 
     @Override
     public String toString() {
-        return "VendaVO{" + "sessao=" + sessao + ", tipoDocumento=" + tipoDocumento + ", uuid=" + uuid + ", chave=" + chave + ", idPDV=" + idPDV + ", codigoSefaz=" + codigoSefaz + ", codigoRetorno=" + codigoRetorno + ", msgSefaz=" + msgSefaz + ", codigoErro=" + codigoErro + ", msgErro=" + msgErro + ", xmlProcessado=" + xmlProcessado + ", xmlEnvio=" + xmlEnvio + ", dataProcessado=" + dataProcessado + ", idQrCode=" + idQrCode + ", nserieSAT=" + nserieSAT + ", nCFe=" + nCFe + ", problemas=" + problemas + '}';
+//        String strProblemas = "";
+//        if (problemas != null && !problemas.isEmpty()) {
+//            StringBuilder sb = new StringBuilder();
+//            for (String pro : problemas) {
+//                if (sb.length() > 0) {
+//                    sb.append(", ");
+//                }
+//                sb.append(pro);
+//            }
+//            strProblemas = sb.toString();
+//        }
+
+        //return "VendaVO{" + "sessao=" + sessao + ", tipoDocumento=" + tipoDocumento + ", uuid=" + uuid + ", chave=" + chave + ", idPDV=" + idPDV + ", codigoSefaz=" + codigoSefaz + ", codigoRetorno=" + codigoRetorno + ", msgSefaz=" + msgSefaz + ", codigoErro=" + codigoErro + ", msgErro=" + msgErro + ", xmlProcessado=" + xmlProcessado + ", xmlEnvio=" + xmlEnvio + ", dataProcessado=" + dataProcessado + ", idQrCode=" + idQrCode + ", nserieSAT=" + nserieSAT + ", nCFe=" + nCFe + ", problemas=" + strProblemas + '}';
+        return "VendaVO{" + "sessao=" + sessao + ", tipoDocumento=" + tipoDocumento + ", uuid=" + uuid + ", chave=" + chave + ", idPDV=" + idPDV + ", codigoSefaz=" + codigoSefaz + ", codigoRetorno=" + codigoRetorno + ", msgSefaz=" + msgSefaz + ", codigoErro=" + codigoErro + ", msgErro=" + msgErro + ", xmlProcessado=" + xmlProcessado + ", xmlEnvio=" + xmlEnvio + ", dataProcessado=" + dataProcessado + ", idQrCode=" + idQrCode + ", nserieSAT=" + nserieSAT + ", nCFe=" + nCFe + '}';
     }
 }
