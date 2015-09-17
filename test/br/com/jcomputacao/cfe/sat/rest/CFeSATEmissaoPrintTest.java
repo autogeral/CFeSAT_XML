@@ -19,7 +19,7 @@ public class CFeSATEmissaoPrintTest {
 
     public static void main(String[] args) {
         try {
-            String url = "http://localhost:8080/fiscal-sat/api/printer/status";
+            String url = "http://AD01:8888/fiscal-sat/api/printer/status";
             GetMethod get = new GetMethod(url);
 
             HttpClient client = new HttpClient();
@@ -44,8 +44,9 @@ public class CFeSATEmissaoPrintTest {
             //CFe35150982373077000171599000039370000225029039
             //Cancelado!!
             //http://localhost:8080/fiscal-sat/api/venda/cancelamento/CFe35150982373077000171599000039370000248594026/print
-            String chave = "CFe35150982373077000171599000039370000248594026";
-            url = "http://localhost:8080/fiscal-sat/api/cfe/" + chave + "/pdf";
+            //String chave = "CFe35150982373077000171599000039370000248594026";
+            String chave = "CFe35150905437537000137590000186980000015755974";
+            url = "http://AD01:8888/fiscal-sat/api/cfe/" + chave + "/pdf";
             get = new GetMethod(url);
             r = client.executeMethod(get);
             System.out.println("Response code : " + r);

@@ -1,0 +1,93 @@
+package br.com.jcomputacao.cfe.sat.bematech.json;
+
+/**
+ * 17/09/2015 18:53:38
+ *
+ * @author murilo
+ */
+public class VendaVOSucessoTest {
+
+    public static void main(String args[]) {
+        String envio = "{\"idPDV\":\"PDV001\",\"dest\":{\"CPF\":\"27933992803\"},\"det\":[{\"nItem\":\"1\",\"imposto\":{\"COFINS\":{\"COFINSNT\":{\"CST\":\"04\"}},\"ICMS\":{\"ICMS40\":{\"Orig\":\"0\",\"CST\":\"60\"}},\"PIS\":{\"PISNT\":{\"CST\":\"04\"}},\"vItem12741\":\"0.01\"},\"prod\":{\"CFOP\":\"5405\",\"NCM\":\"73181500\",\"cProd\":\"00001\",\"indRegra\":\"A\",\"qCom\":\"1.0000\",\"uCom\":\"UN\",\"vDesc\":\"0.00\",\"vUnCom\":\"0.06\",\"xProd\":\"ARRUELA LISA\",\"vOutro\":\"0.00\"}}],\"emit\":{\"CNPJ\":\"05437537000137\",\"IE\":\"387034155115\",\"indRatISSQN\":\"S\"},\"entrega\":null,\"ide\":{\"CNPJ\":\"09346052000199\",\"numeroCaixa\":\"001\",\"signAC\":\"HF18DLyfUnMqMb06KbaE58GdNUdRIE4FS0+nd5bzNlWAv4Xo2Te+QpFGNyR00oV3u+1Kj7Zr8jf0B/8BhmaBy55owBWkKXk6w8/nurdyFrJyfzz/xDghI91d/Tni95xljZwvL85VhsrUkAQF18u/Pu0SPHdaOf3Qvib7ragLEyfxnwtmUohfwZerylvioHjeUR1iytFWuxt86+2HuYq2j+SltGoXQyWB5LZRB12ncBbycpJ0WvtPSkH2IGA0iV5I+oEIpFAhBtl4D8UezCYKcCsyT9LihCVeFrkhB+nXjq90IEY5gQgBbm+ekc5DVRtzf4Va7LAKBOoqPbZgTcpPLw==\"},\"total\":{\"vCFeLei12741\":\"0.01\"},\"pgto\":{\"MP\":[{\"cMP\":\"01\",\"vMP\":\"0.06\"}]},\"dataInserido\":\"17/09/2015 18:00:18\",\"infAdic\":{\"infCpl\":\"Obrigado, volte sempre\"},\"extratoResumido\":false}";
+        System.out.println(envio);
+        String json = "{\n"
+                + "  \"chave\": \"CFe35150905437537000137590000186980000015755974\",\n"
+                + "  \"codigoSefaz\": \"\",\n"
+                + "  \"dataProcessado\": \"2015-09-17T18:10:43.458-03:00\",\n"
+                + "  \"det\": {\n"
+                + "    \"nItem\": \"1\",\n"
+                + "    \"imposto\": {\n"
+                + "      \"COFINS\": {\n"
+                + "        \"COFINSNT\": {\n"
+                + "          \"CST\": \"04\"\n"
+                + "        }\n"
+                + "      },\n"
+                + "      \"ICMS\": {\n"
+                + "        \"ICMS40\": {\n"
+                + "          \"Orig\": \"0\",\n"
+                + "          \"CST\": \"60\"\n"
+                + "        }\n"
+                + "      },\n"
+                + "      \"PIS\": {\n"
+                + "        \"PISNT\": {\n"
+                + "          \"CST\": \"04\"\n"
+                + "        }\n"
+                + "      },\n"
+                + "      \"vItem12741\": \"0.01\"\n"
+                + "    },\n"
+                + "    \"prod\": {\n"
+                + "      \"CFOP\": \"5405\",\n"
+                + "      \"NCM\": \"73181500\",\n"
+                + "      \"cProd\": \"00001\",\n"
+                + "      \"vProd\": \"0.06\",\n"
+                + "      \"indRegra\": \"A\",\n"
+                + "      \"qCom\": \"1.0000\",\n"
+                + "      \"uCom\": \"UN\",\n"
+                + "      \"vDesc\": \"0.00\",\n"
+                + "      \"vUnCom\": \"0.06\",\n"
+                + "      \"xProd\": \"ARRUELA LISA\",\n"
+                + "      \"vItem\": \"0.06\",\n"
+                + "      \"vOutro\": \"0.00\"\n"
+                + "    }\n"
+                + "  },\n"
+                + "  \"idQrCode\": \"K+BYD+x4xaLjphHcrMuSk4maAO+x/dcPmQA8ANE1y6+MnIK66YHMOpCbp+hF1mfn3DwaMTdUOyGvkrtwB+5m0dYs7GfKmSY+RjKOOzY2iY/0gBHklX1NBPJYY90h9yXivN1IvcmcVSTHdSAy5VsgpxYLsR0WV0QFnPHMYncNPcNvymu3w9+li9k6wI53L2FEAr+wL2qnErWFOR06OZI2/6S/eW/F3NgM3jz8n8RVRkuLAiiCOFOPZ1L7d0MwdX3JlcM+o+Kp47yHy1W5quyDL0mJGykhKSWbcBgNcVqbj0ojL9PuBgAth2OxyCv8LAq00/ykzj0DXGL8y07oIyFwaA==\",\n"
+                + "  \"infAdic\": {\n"
+                + "    \"infCpl\": \"Obrigado, volte sempre\",\n"
+                + "    \"obsFisco\": {\n"
+                + "      \"xCampo\": \"xCampo1\",\n"
+                + "      \"xTexto\": \"xTexto1\"\n"
+                + "    }\n"
+                + "  },\n"
+                + "  \"msgSefaz\": \"\",\n"
+                + "  \"nserieSAT\": \"000018698\",\n"
+                + "  \"pgto\": {\n"
+                + "    \"MP\": {\n"
+                + "      \"cMP\": \"01\",\n"
+                + "      \"vMP\": \"0.06\"\n"
+                + "    },\n"
+                + "    \"vTroco\": \"0.00\"\n"
+                + "  },\n"
+                + "  \"tipoDocumento\": \"VENDA\",\n"
+                + "  \"total\": {\n"
+                + "    \"ICMSTot\": {\n"
+                + "      \"vCOFINS\": \"0.00\",\n"
+                + "      \"vCOFINSST\": \"0.00\",\n"
+                + "      \"vDesc\": \"0.00\",\n"
+                + "      \"vICMS\": \"0.00\",\n"
+                + "      \"vOutro\": \"0.00\",\n"
+                + "      \"vPIS\": \"0.00\",\n"
+                + "      \"vPISST\": \"0.00\",\n"
+                + "      \"vProd\": \"0.06\"\n"
+                + "    },\n"
+                + "    \"vCFe\": \"0.06\",\n"
+                + "    \"vCFeLei12741\": \"0.01\"\n"
+                + "  },\n"
+                + "  \"uuid\": \"b5740d03-da69-461d-82cf-60e58f2a2c30\",\n"
+                + "  \"xmlEnvio\": \"<CFe><infCFe versaoDadosEnt=\\\"00.06\\\"><ide><CNPJ>09346052000199</CNPJ><signAC>HF18DLyfUnMqMb06KbaE58GdNUdRIE4FS0+nd5bzNlWAv4Xo2Te+QpFGNyR00oV3u+1Kj7Zr8jf0B/8BhmaBy55owBWkKXk6w8/nurdyFrJyfzz/xDghI91d/Tni95xljZwvL85VhsrUkAQF18u/Pu0SPHdaOf3Qvib7ragLEyfxnwtmUohfwZerylvioHjeUR1iytFWuxt86+2HuYq2j+SltGoXQyWB5LZRB12ncBbycpJ0WvtPSkH2IGA0iV5I+oEIpFAhBtl4D8UezCYKcCsyT9LihCVeFrkhB+nXjq90IEY5gQgBbm+ekc5DVRtzf4Va7LAKBOoqPbZgTcpPLw==</signAC><numeroCaixa>001</numeroCaixa></ide><emit><CNPJ>05437537000137</CNPJ><IE>387034155115</IE><indRatISSQN>S</indRatISSQN></emit><dest/><det nItem=\\\"1\\\"><prod><cProd>00001</cProd><xProd>ARRUELA LISA</xProd><NCM>73181500</NCM><CFOP>5405</CFOP><uCom>UN</uCom><qCom>1.0000</qCom><vUnCom>0.06</vUnCom><indRegra>A</indRegra><vDesc>0.00</vDesc><vOutro>0.00</vOutro></prod><imposto><vItem12741>0.01</vItem12741><ICMS><ICMS40><Orig>0</Orig><CST>60</CST></ICMS40></ICMS><PIS><PISNT><CST>04</CST></PISNT></PIS><COFINS><COFINSNT><CST>04</CST></COFINSNT></COFINS></imposto></det><total><vCFeLei12741>0.01</vCFeLei12741></total><pgto><MP><cMP>01</cMP><vMP>0.06</vMP></MP></pgto><infAdic><infCpl>Obrigado, volte sempre</infCpl></infAdic></infCFe></CFe>\",\n"
+                + "  \"xmlProcessado\": \"<CFe><infCFe Id=\\\"CFe35150905437537000137590000186980000015755974\\\" versao=\\\"0.06\\\" versaoDadosEnt=\\\"00.06\\\" versaoSB=\\\"010000\\\"><ide><cUF>35</cUF><cNF>575597</cNF><mod>59</mod><nserieSAT>000018698</nserieSAT><nCFe>000001</nCFe><dEmi>20150917</dEmi><hEmi>180934</hEmi><cDV>4</cDV><tpAmb>1</tpAmb><CNPJ>09346052000199</CNPJ><signAC>HF18DLyfUnMqMb06KbaE58GdNUdRIE4FS0+nd5bzNlWAv4Xo2Te+QpFGNyR00oV3u+1Kj7Zr8jf0B/8BhmaBy55owBWkKXk6w8/nurdyFrJyfzz/xDghI91d/Tni95xljZwvL85VhsrUkAQF18u/Pu0SPHdaOf3Qvib7ragLEyfxnwtmUohfwZerylvioHjeUR1iytFWuxt86+2HuYq2j+SltGoXQyWB5LZRB12ncBbycpJ0WvtPSkH2IGA0iV5I+oEIpFAhBtl4D8UezCYKcCsyT9LihCVeFrkhB+nXjq90IEY5gQgBbm+ekc5DVRtzf4Va7LAKBOoqPbZgTcpPLw==</signAC><assinaturaQRCODE>K+BYD+x4xaLjphHcrMuSk4maAO+x/dcPmQA8ANE1y6+MnIK66YHMOpCbp+hF1mfn3DwaMTdUOyGvkrtwB+5m0dYs7GfKmSY+RjKOOzY2iY/0gBHklX1NBPJYY90h9yXivN1IvcmcVSTHdSAy5VsgpxYLsR0WV0QFnPHMYncNPcNvymu3w9+li9k6wI53L2FEAr+wL2qnErWFOR06OZI2/6S/eW/F3NgM3jz8n8RVRkuLAiiCOFOPZ1L7d0MwdX3JlcM+o+Kp47yHy1W5quyDL0mJGykhKSWbcBgNcVqbj0ojL9PuBgAth2OxyCv8LAq00/ykzj0DXGL8y07oIyFwaA==</assinaturaQRCODE><numeroCaixa>001</numeroCaixa></ide><emit><CNPJ>05437537000137</CNPJ><xNome>AUTO GERAL AUTOPECAS LTDA</xNome><xFant>AUTO GERAL</xFant><enderEmit><xLgr>AVENIDA DOUTOR OCTAVIANO PEREIRA MENDES</xLgr><nro>1333</nro><xBairro>CENTRO</xBairro><xMun>ITU</xMun><CEP>13301000</CEP></enderEmit><IE>387034155115</IE><cRegTrib>3</cRegTrib><indRatISSQN>S</indRatISSQN></emit><dest><CPF></CPF></dest><det nItem=\\\"1\\\"><prod><cProd>00001</cProd><xProd>ARRUELA LISA</xProd><NCM>73181500</NCM><CFOP>5405</CFOP><uCom>UN</uCom><qCom>1.0000</qCom><vUnCom>0.06</vUnCom><vProd>0.06</vProd><indRegra>A</indRegra><vDesc>0.00</vDesc><vOutro>0.00</vOutro><vItem>0.06</vItem></prod><imposto><vItem12741>0.01</vItem12741><ICMS><ICMS40><Orig>0</Orig><CST>60</CST></ICMS40></ICMS><PIS><PISNT><CST>04</CST></PISNT></PIS><COFINS><COFINSNT><CST>04</CST></COFINSNT></COFINS></imposto></det><total><ICMSTot><vICMS>0.00</vICMS><vProd>0.06</vProd><vDesc>0.00</vDesc><vPIS>0.00</vPIS><vCOFINS>0.00</vCOFINS><vPISST>0.00</vPISST><vCOFINSST>0.00</vCOFINSST><vOutro>0.00</vOutro></ICMSTot><vCFe>0.06</vCFe><vCFeLei12741>0.01</vCFeLei12741></total><pgto><MP><cMP>01</cMP><vMP>0.06</vMP></MP><vTroco>0.00</vTroco></pgto><infAdic><infCpl>Obrigado, volte sempre</infCpl><obsFisco xCampo=\\\"xCampo1\\\"><xTexto>xTexto1</xTexto></obsFisco></infAdic></infCFe><Signature xmlns=\\\"http://www.w3.org/2000/09/xmldsig#\\\"><SignedInfo xmlns=\\\"http://www.w3.org/2000/09/xmldsig#\\\"><CanonicalizationMethod Algorithm=\\\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\\\"></CanonicalizationMethod><SignatureMethod Algorithm=\\\"http://www.w3.org/2001/04/xmldsig-more#rsa-sha256\\\"></SignatureMethod><Reference URI=\\\"#CFe35150905437537000137590000186980000015755974\\\"><Transforms><Transform Algorithm=\\\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\\\"></Transform><Transform Algorithm=\\\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\\\"></Transform></Transforms><DigestMethod Algorithm=\\\"http://www.w3.org/2001/04/xmlenc#sha256\\\"></DigestMethod><DigestValue>5F8XSplOFRYl1JcShZagk08am96sKe3I/kFZe66w208=</DigestValue></Reference></SignedInfo><SignatureValue>N8vQyewkYzuCx5bzszMmI0h6D/DeD3PQnhJLSgKjxQnimbFukoeLIYHWD3l1xYCn7B9XBbShnjR6VMtKJ73KTNtPwxPbtaQJJSR42ffvTJUdRsMvf0MZ5KWRWnwkqioA2Fgr6NkQV5dYm5XY/DjOpM+EtUQK+h0ugZ7Y3Mu5euJ48hteZYEqS2GXWjvHzNxMMlyvZml/iCLewSd26k5/FELQvXqZW/cl+fNCI+Nlfh9i63u+7OJ5KEN8VLOmiG8Ff5qmD+NWXTAFw9d1oYmHP55zXXNiobC1FZGsEY1sW0YQX2wk77rVrPEcP9ZRbef9Ub92yV8xCKCH1Jnm123B9w==</SignatureValue><KeyInfo><X509Data><X509Certificate>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</X509Certificate></X509Data></KeyInfo></Signature></CFe>\",\n"
+                + "  \"nCFe\": \"000001\"\n"
+                + "}";
+        System.out.println(json);
+    }
+
+}
