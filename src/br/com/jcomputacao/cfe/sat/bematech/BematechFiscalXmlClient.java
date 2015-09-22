@@ -34,8 +34,8 @@ public class BematechFiscalXmlClient {
     public byte[] getContent() {
         return content;
     }
-    
-        public int transmitir(String xml) throws IOException {
+
+    public int transmitir(String xml) throws IOException {
         String url = "http://" + host + ":" + port + "/fiscal-sat/api/venda";
         return executePost(url, xml);
     }
@@ -44,12 +44,13 @@ public class BematechFiscalXmlClient {
         String url = "http://" + host + ":" + port + "/fiscal-sat/api/venda/cancelamento";
         return executePost(url, xml);
     }
-    
+
     private int executePost(String url, String xml) throws IOException {
         System.out.println("POST : " + url);
         PostMethod post = new PostMethod(url);
         RequestEntity requestEntity = new StringRequestEntity(xml, "application/xml", "UTF-8");
         post.setRequestHeader("Accept", "application/xml");
+        post.setRequestHeader("Accept", "application/json");
         post.setRequestHeader("Content-type", "application/xml");
         post.setRequestEntity(requestEntity);
 
@@ -57,7 +58,7 @@ public class BematechFiscalXmlClient {
         int r = client.executeMethod(post);
 
         InputStream input = post.getResponseBodyAsStream();
-        
+
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         //InputStreamReader isr = new InputStreamReader(input, "UTF-8");
         //InputStreamReader isr = new InputStreamReader(input, "ISO-8859-1");
