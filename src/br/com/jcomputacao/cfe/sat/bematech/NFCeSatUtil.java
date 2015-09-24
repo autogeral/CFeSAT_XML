@@ -6,8 +6,13 @@ package br.com.jcomputacao.cfe.sat.bematech;
  */
 public class NFCeSatUtil {
     
-    public static String getAssinaturaAutomacaoComercial() {
-        return "HF18DLyfUnMqMb06KbaE58GdNUdRIE4FS0+nd5bzNlWAv4Xo2Te+QpFGNyR00oV3u+1Kj7Zr8jf0B/8BhmaBy55owBWkKXk6w8/nurdyFrJyfzz/xDghI91d/Tni95xljZwvL85VhsrUkAQF18u/Pu0SPHdaOf3Qvib7ragLEyfxnwtmUohfwZerylvioHjeUR1iytFWuxt86+2HuYq2j+SltGoXQyWB5LZRB12ncBbycpJ0WvtPSkH2IGA0iV5I+oEIpFAhBtl4D8UezCYKcCsyT9LihCVeFrkhB+nXjq90IEY5gQgBbm+ekc5DVRtzf4Va7LAKBOoqPbZgTcpPLw==";
+    public static String getAssinaturaAutomacaoComercial(String cnpj) {
+        String key = "sat.signAC";
+        String value = System.getProperty(cnpj + "." + key);
+        if (value != null) {
+            return value;
+        }
+        return System.getProperty(key);
     }
     
     public static String getServidorHost(String cnpj){
