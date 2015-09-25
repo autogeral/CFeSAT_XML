@@ -5,6 +5,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import org.apache.commons.httpclient.Header;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.methods.GetMethod;
 import org.apache.commons.httpclient.methods.PostMethod;
@@ -54,6 +55,11 @@ public class BematechFiscalJSonClient {
         int r = client.executeMethod(post);
 
         InputStream input = post.getResponseBodyAsStream();
+        Header[] headers = post.getResponseHeaders();
+        for(Header header:headers) {
+            System.out.println("Header Name  : " + header.getName());
+            System.out.println("Header Value : " + header.getValue());
+        }
         
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         //InputStreamReader isr = new InputStreamReader(input, "UTF-8");
