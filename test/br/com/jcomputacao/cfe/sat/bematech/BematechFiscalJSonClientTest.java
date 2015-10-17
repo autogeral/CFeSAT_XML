@@ -80,15 +80,15 @@ public class BematechFiscalJSonClientTest {
 //    }
 //
 //    /**
-//     * Test of impressao method, of class BematechFiscalJSonClient.
+//     * Test of impressaoPdf method, of class BematechFiscalJSonClient.
 //     */
 //    @Test
 //    public void testImpressao() throws Exception {
-//        System.out.println("impressao");
+//        System.out.println("impressaoPdf");
 //        String chave = "";
 //        BematechFiscalJSonClient instance = null;
 //        int expResult = 0;
-//        int result = instance.impressao(chave);
+//        int result = instance.impressaoPdf(chave);
 //        assertEquals(expResult, result);
 //        // TODO review the generated test code and remove the default call to fail.
 //        fail("The test case is a prototype.");

@@ -82,7 +82,8 @@ public class BematechFiscalJSonClient {
     }
 
     public int impressao(String chave) throws IOException {
-        String url = "http://" + host + ":" + port + "/fiscal-sat/api/cfe/" + chave + "/pdf";
+        //String url = "http://ad01:8888/fiscal-sat/api/operacoes/CFe35151005437537000137590000186980056408374572/imprimir?completo=0";
+        String url = "http://" + host + ":" + port + "/fiscal-sat/api/operacoes/CFe" + chave + "/imprimir?completo=0";
         System.out.println("GET : " + url);
         GetMethod get = new GetMethod(url);
         HttpClient client = new HttpClient();
@@ -99,6 +100,29 @@ public class BematechFiscalJSonClient {
         input.close();
         content = baos.toByteArray();
         response = null;
+        return r;
+    }
+    
+    public int impressaoPdf(String chave) throws IOException {
+        String url = "http://" + host + ":" + port + "/fiscal-sat/api/cfe/" + chave + "/pdf";
+        System.out.println("GET : " + url);
+        GetMethod get = new GetMethod(url);
+        HttpClient client = new HttpClient();
+        int r = client.executeMethod(get);
+
+        InputStream input = get.getResponseBodyAsStream();
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        BufferedInputStream bis = new BufferedInputStream(input);
+        int aByte;
+        while ((aByte = bis.read()) != -1) {
+            baos.write(aByte);
+        }
+        baos.flush();
+        baos.close();
+        bis.close();
+
+        response = baos.toString();
+        content = null;
         return r;
     }
 
