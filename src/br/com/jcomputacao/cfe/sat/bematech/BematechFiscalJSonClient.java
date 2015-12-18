@@ -121,8 +121,8 @@ public class BematechFiscalJSonClient {
         baos.close();
         bis.close();
 
-        response = baos.toString();
-        content = null;
+        content = baos.toByteArray();
+        response = null;
         return r;
     }
 
