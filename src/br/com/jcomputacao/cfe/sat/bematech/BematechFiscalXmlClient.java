@@ -39,6 +39,12 @@ public class BematechFiscalXmlClient {
         String url = "http://" + host + ":" + port + "/fiscal-sat/api/venda";
         return executePost(url, xml);
     }
+    
+    public int validar(String xml) throws IOException {
+        //String url = "http://" + host + ":" + port + "/fiscal-sat/api/venda/validar";
+        String url = "http://" + host + ":" + port + "/fiscal-sat/api/operacoes/validar/xml";
+        return executePost(url, xml);
+    }
 
     public int cancelar(String xml) throws IOException {
         String url = "http://" + host + ":" + port + "/fiscal-sat/api/venda/cancelamento";
@@ -51,7 +57,8 @@ public class BematechFiscalXmlClient {
         RequestEntity requestEntity = new StringRequestEntity(xml, "application/xml", "UTF-8");
         post.setRequestHeader("Accept", "application/xml");
         post.setRequestHeader("Accept", "application/json");
-        post.setRequestHeader("Content-type", "application/xml");
+        //post.setRequestHeader("Content-type", "application/xml");
+        post.setRequestHeader("Content-type", "application/vnd+bematech.operacao-v1+xml");
         post.setRequestEntity(requestEntity);
 
         HttpClient client = new HttpClient();
