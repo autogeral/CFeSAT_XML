@@ -57,8 +57,8 @@ public class BematechFiscalXmlClient {
         RequestEntity requestEntity = new StringRequestEntity(xml, "application/xml", "UTF-8");
         post.setRequestHeader("Accept", "application/xml");
         post.setRequestHeader("Accept", "application/json");
-        //post.setRequestHeader("Content-type", "application/xml");
-        post.setRequestHeader("Content-type", "application/vnd+bematech.operacao-v1+xml");
+        post.setRequestHeader("Content-type", "application/xml");
+        //post.setRequestHeader("Content-type", "application/vnd+bematech.operacao-v1+xml");
         post.setRequestEntity(requestEntity);
 
         HttpClient client = new HttpClient();
