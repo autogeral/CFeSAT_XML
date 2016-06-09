@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import org.apache.commons.httpclient.HttpClient;
+import org.apache.commons.httpclient.methods.GetMethod;
 import org.apache.commons.httpclient.methods.PostMethod;
 import org.apache.commons.httpclient.methods.RequestEntity;
 import org.apache.commons.httpclient.methods.StringRequestEntity;
@@ -86,4 +87,27 @@ public class BematechFiscalXmlClient {
         return r;
     }
 
+    public int statusSat() throws IOException {
+        String url = "http://" + host + ":" + port + "/fiscal-sat/api/sat/status";
+        GetMethod get = new GetMethod(url);
+
+        HttpClient client = new HttpClient();
+        System.out.println("GET : " + url);
+        int r = client.executeMethod(get);
+
+        InputStream input = get.getResponseBodyAsStream();
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        BufferedInputStream bis = new BufferedInputStream(input);
+        int aByte;
+        while ((aByte = bis.read()) != -1) {
+            baos.write(aByte);
+        }
+        baos.flush();
+        baos.close();
+        bis.close();
+
+        response = baos.toString();
+        content = null;
+        return r;
+    }
 }
