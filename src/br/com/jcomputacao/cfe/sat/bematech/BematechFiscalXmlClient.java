@@ -86,9 +86,18 @@ public class BematechFiscalXmlClient {
         content = null;
         return r;
     }
-
+    
     public int statusSat() throws IOException {
         String url = "http://" + host + ":" + port + "/fiscal-sat/api/sat/status";
+        return executeGet(url);
+    }
+    
+    public int configuracaoInfoSat() throws IOException {
+        String url = "http://" + host + ":" + port + "/fiscal-sat/api/configuracao/info";
+        return executeGet(url);
+    }
+
+    private int executeGet(String url) throws IOException {
         GetMethod get = new GetMethod(url);
 
         HttpClient client = new HttpClient();
