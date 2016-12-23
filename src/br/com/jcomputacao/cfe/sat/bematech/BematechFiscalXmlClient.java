@@ -13,6 +13,9 @@ import org.apache.commons.httpclient.methods.StringRequestEntity;
 
 /**
  * 22/09/2015 11:33:34
+ * 
+ * http://localhost:21212/fiscal-sat/docs/ para acesso a API Rest para 
+ * operações com o Fiscal Manager SAT Bematech
  *
  * @author murilo
  */
