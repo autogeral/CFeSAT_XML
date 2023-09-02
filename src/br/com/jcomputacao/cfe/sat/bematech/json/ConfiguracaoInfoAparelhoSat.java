@@ -15,8 +15,10 @@ public class ConfiguracaoInfoAparelhoSat {
     private String serial;
     private String licenciado;
     private String validadeLicenca;
+    private String mensagemLicenca;
     private String CNPJ;
     private String vecf;
+    private String dllVersion;
     private String msg;
 
     public String getVersao() {
@@ -67,6 +69,14 @@ public class ConfiguracaoInfoAparelhoSat {
         this.validadeLicenca = validadeLicenca;
     }
 
+    public String getMensagemLicenca() {
+        return mensagemLicenca;
+    }
+
+    public void setMensagemLicenca(String mensagemLicenca) {
+        this.mensagemLicenca = mensagemLicenca;
+    }
+
     public String getCNPJ() {
         return CNPJ;
     }
@@ -83,6 +93,14 @@ public class ConfiguracaoInfoAparelhoSat {
         this.vecf = vecf;
     }
 
+    public String getDllVersion() {
+        return dllVersion;
+    }
+
+    public void setDllVersion(String dllVersion) {
+        this.dllVersion = dllVersion;
+    }
+
     public String getMsg() {
         return msg;
     }
@@ -93,7 +111,9 @@ public class ConfiguracaoInfoAparelhoSat {
     
     @Override
     public String toString() {
-        return "ConfiguracaoInfoAparelhoSat{" + "versao=" + versao + "\n modulo=" + modulo + "\n nome=" + nome + "\n serial=" + serial + "\n licenciado=" + licenciado + "\n validadeLicenca=" + validadeLicenca + "\n CNPJ=" + CNPJ + "\n vecf=" + vecf + '}';
+        return "ConfiguracaoInfoAparelhoSat{" + "versao=" + versao + "\n modulo=" + modulo + "\n nome=" + nome + "\n serial=" + serial + "\n licenciado=" + licenciado
+                + "\n validadeLicenca=" + validadeLicenca + "\n mensagemLicenca=" + mensagemLicenca
+                + "\n CNPJ=" + CNPJ + "\n dllVersion="  + dllVersion + "\n vecf=" + vecf + '}';
     }
 
 }

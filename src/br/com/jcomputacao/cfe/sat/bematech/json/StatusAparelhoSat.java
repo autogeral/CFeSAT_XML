@@ -33,6 +33,7 @@ public class StatusAparelhoSat {
     private String memoriaUtilizada;
     private String mensagemRetorno;
     private String mensagemSefaz;
+    private String messageReturnDevice;
     private String nivelBateria;
     private String numeroSessao;
     private String primeiroCFeArmazenado;
@@ -229,6 +230,14 @@ public class StatusAparelhoSat {
         this.mensagemSefaz = mensagemSefaz;
     }
 
+    public String getMessageReturnDevice() {
+        return messageReturnDevice;
+    }
+
+    public void setMessageReturnDevice(String messageReturnDevice) {
+        this.messageReturnDevice = messageReturnDevice;
+    }
+
     public String getNivelBateria() {
         return nivelBateria;
     }
@@ -295,6 +304,10 @@ public class StatusAparelhoSat {
 
     @Override
     public String toString() {
-        return "StatusAparelhoSat{" + "codigoRetorno=" + codigoRetorno + "\n dataHoraAtual=" + dataHoraAtual + "\n ipSat=" + ip + "\n numeroSerie=" + numeroSerie + "\n online=" + online + "\n statusLan=" + statusLan + "\n statusOperacao=" + statusOperacao + "\n ultimaComunicacaoSEFAZ=" + ultimaComunicacaoSEFAZ + "\n ultimaTransmissaoCFe=" + ultimaTransmissaoCFe + '}';
+        return "StatusAparelhoSat{" + "codigoRetorno=" + codigoRetorno + "\n dataHoraAtual=" + dataHoraAtual
+                + "\n ipSat=" + ip + "\n numeroSerie=" + numeroSerie + "\n online=" + online + "\n statusLan="
+                + statusLan + "\n statusOperacao=" + statusOperacao + "\n ultimaComunicacaoSEFAZ="
+                + ultimaComunicacaoSEFAZ + "\n ultimaTransmissaoCFe=" + ultimaTransmissaoCFe
+                + (messageReturnDevice != null ? "\n messageReturnDevice=" + messageReturnDevice : "") + '}';
     }
 }
