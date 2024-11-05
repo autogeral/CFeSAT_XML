@@ -42,6 +42,7 @@ public class StatusAparelhoSat {
     private String ultimoCFeEnviado;
     private String versaoLayout;
     private String versaoSoftwareBasico;
+    private String msgAlertaCFePendente;
 
     @XmlList
     private List<String> msgs;
@@ -300,6 +301,14 @@ public class StatusAparelhoSat {
 
     public void setVersaoSoftwareBasico(String versaoSoftwareBasico) {
         this.versaoSoftwareBasico = versaoSoftwareBasico;
+    }
+
+    public String getMsgAlertaCFePendente() {
+        return msgAlertaCFePendente;
+    }
+
+    public void setMsgAlertaCFePendente(String msgAlertaCFePendente) {
+        this.msgAlertaCFePendente = msgAlertaCFePendente;
     }
 
     @Override
